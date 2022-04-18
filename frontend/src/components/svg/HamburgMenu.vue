@@ -13,17 +13,17 @@
 <style scoped>
 .hamburgMenuIcon {
     
-    width: 34px;
-    height: 34px;
+    width: 42px;
+    height: 42px;
     color: #F0F0E4;
     
 }
 /*Tablet sizes*-----------------------------------------------------*/
-@media (min-width: 723px) {
+@media (min-width: 480px) {
     .hamburgMenuIcon {
     
-        width: 40px;
-        height: 40px;
+        width: 48px;
+        height: 48px;
         color: #F0F0E4;   
     }
 }

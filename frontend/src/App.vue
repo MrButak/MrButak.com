@@ -20,5 +20,6 @@ import Header from './components/Header.vue';
 #app {
     overflow-x: hidden;
     min-height: 100vh;
+    background-color: #F0F0E4;
 }
 </style>

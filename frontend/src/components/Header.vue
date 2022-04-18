@@ -2,14 +2,17 @@
 
 <header class="menu">
       <div class="menu-wrap">
-          <!-- <img src="prison-ptsd-logo-400x124.png" class="logo-img" alt="Logo">
-          <img src="prison-ptsd-logo-400x124-mobile.png" class="mobile-logo-img" alt="Logo"> -->
+          <div class="icon-wrapper">
+            <a><img src="../assets/icons/github-icon.svg" class="mobile-header-icon" alt="github-icon"></a>
+            <a><img src="../assets/icons/email-icon.svg" class="mobile-header-icon" alt="github-icon"></a>
+            <a><img src="../assets/icons/linkedin-icon.svg" class="mobile-header-icon" alt="github-icon"></a>
+          </div>
           <input type="checkbox" id="checkbox">
           <nav>
               <ul>
                   <li><a href="#">Home</a></li>
-                  <li><a href="#">Faqs</a></li>
-                  <li><a href="#" target="_blank" rel="noopener noreferrer">Join Us</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Resume</a></li>
               </ul>
           </nav>
           <label id="hamburg-icon" class="menu-icon" for="checkbox">
@@ -73,18 +76,26 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0px 35px 0px 0;
-    height: 50px;
-    background-color: #DB5F29;
+    height: 60px;
+    background-color: #7B3C3C;
+}
+.icon-wrapper {
+    display: flex;
+    gap: 30px;
+    
+    padding: 11px 0 0 35px;
 }
 #hamburg-icon {
     padding: 10px 0 0 20px;
 }
-
-
+.mobile-header-icon {
+    width: 38px;
+    
+}
 nav {
     position: absolute;
-    background-color: #F0F0E4;
-    top: 33px;
+    background-color: #68BDE1;
+    top: 60px;
     left:0;
     width: 100%; 
 }
@@ -93,7 +104,6 @@ nav ul {
     max-height: 0px;
     overflow: hidden;
     transition: all .2s;
-    
 }
 nav ul li {
     padding: 0 15px;
@@ -101,7 +111,8 @@ nav ul li {
 nav ul li a {
     display: inline-block;
     padding: 12px;
-    color: black;
+    color: #7B3C3C;
+    font-weight: 700;
     text-decoration: none;
     letter-spacing: 0.05em;
 }
@@ -123,55 +134,43 @@ nav ul li a:hover, nav ul li a:focus {
 
 
 /*Tablet sizes---------------------------------------------------------*/
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 
     /*Header start*/
+    .menu-wrap {
+        height: 60px;
+    }
+    /* nav {
+        top: 60px;
+    } */
+    #hamburg-icon {
+        padding: 6px 0 0 20px;
+    }
     
-    .menu-icon {
-        display: none;
-    }
-    nav {
-        top: -10px;
-        background-color: transparent; 
-    }
-    nav ul {
-    max-height: 178px;
-    padding: 12px 25px 0 0;
-    
-    align-items: center;
-    text-align: right;
-    
-    }
-    nav ul li {
-        display: inline-flex;
-        padding: 0px;  
-    }
-    #checkbox:checked ~ nav ul {
-        padding-top: 55px;
-        border: none;
-    }
-    nav ul li a {
-        color: #F0F0E4;
-    }
-    /*Header end*/
 }
 /*Desktop sizes*-----------------------------------------------------*/
 
-@media (min-width: 1200px) { 
+@media (min-width: 900px) { 
 
     /*Header start*/
     
     .menu-icon {
         display: none;
     }
+    .icon-wrapper {
+        display: flex;
+        gap: 40px;
+        padding: 11px 0 0 0;
+        margin: 0 0 0 6vw;
+    }
     nav {
-        top: -10px;
+        top: -7px;
         background-color: transparent;
     }
     nav ul {
         max-height: 178px;
-        padding: 12px 150px 0 0;;
-        
+        padding: 12px 0 0 0;;
+        margin: 0 6vw 0 0;
         align-items: center;
         text-align: right;
     }
@@ -179,16 +178,8 @@ nav ul li a:hover, nav ul li a:focus {
         display: inline-flex;
         padding-left: 20px;
     }
-    
-    .logo-img {
-        max-width: 100%;
-        height: auto;
-        padding-left: 150px;
-    }
-    #checkbox:checked ~ nav ul {
-        padding-top: 55px;
-        padding-right: 150px;
-        border: none;
+    nav ul li a {
+        color: #F0F0E4;
     }
     /*Header end*/
 }
