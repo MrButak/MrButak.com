@@ -24,7 +24,7 @@
 </template>
 
 
-<script async setup>
+<script setup>
 
 import { ref, onMounted, computed } from 'vue';
 import HamburgMenu from '../components/svg/HamburgMenu.vue'

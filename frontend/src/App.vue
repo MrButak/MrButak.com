@@ -1,10 +1,11 @@
 <script setup>
 import Header from './components/Header.vue';
+import AboutMe from './components/home/AboutMe.vue'
 </script>
 
 <template>
-  <!-- <HelloWorld msg="Hello Vue 3 + Vite" /> -->
 <Header />
+<AboutMe />
 </template>
 
 <style>
@@ -21,5 +22,6 @@ import Header from './components/Header.vue';
     overflow-x: hidden;
     min-height: 100vh;
     background-color: #F0F0E4;
+    
 }
 </style>
