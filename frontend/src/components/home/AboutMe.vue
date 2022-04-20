@@ -3,7 +3,11 @@
 <div class="about-me-wrapper-main">
 
     <div class="about-me-inner">
+        <h2>Hello, I'm Matthew - Full-stack develover.</h2>
     </div>
+    <div class="stripes" style="background-color: ;"></div>
+    <div class="stripes" style="background-color: ;"></div>
+    <div class="stripes" style="background-color: ;"></div>
 </div>
 </div>
 
@@ -29,17 +33,19 @@ import { ref, onMounted, computed } from 'vue';
 // });
 </script>
 
-<style>
-
+<style scoped>
+h2 {
+    text-align: center;
+}
 .about-me-wrapper-main {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
-    width: 100%;
+    width: 100%; */
     
     /* padding: 20px 0; */
-    background-color: #DB5F29;
+    /* background-color: #DB5F29; */
     /* border: 10px 0 solid #DB5F29; */
 }
 .about-me-full-width {
@@ -48,8 +54,12 @@ import { ref, onMounted, computed } from 'vue';
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 300px 0 0 0;
+    margin: 50px 0 0 0;
 
+}
+.stripes {
+    width: 100%;
+    height: 50px;
 }
 /* .about-me-inner {
 
