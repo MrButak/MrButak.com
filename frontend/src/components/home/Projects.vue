@@ -5,20 +5,50 @@
     <h2 class="home-header">Here are some of my notable projects.</h2>
     <div class="full-flex-div">
         <div class="home-content-wrapper">
+            <h3 class="project-title">E-Shop</h3>
             
-            
+            <div class="project-body-text">
+                <p><text style="font-weight: 600">About: </text>
+                    <br />
+                    For a local smoothie bussiness, this webapp accepts payment via stripe, sends order confermation e-mails, and integrates a postgresql database to add / remove menu items.
+                </p>
+                
+                <p>
+                    <br />
+                    <text style="font-weight: 600">Frontend: </text>
+                    <br />Vue, Vanilla JavaScript, HTML, Vanilla CSS
+                </p>
+                <br />
+                <p>
+                    <text style="font-weight: 600">Backend: </text>
+                    <br />Node.js, Express.js, Postgresql, Stripe API, STMP configuration
+                </p>
+                <br />
+                <p>
+                    <text style="font-weight: 600">Other: </text>
+                    <br />Git, GIMP, Heroku for deployment
+                </p>
+            </div>
+            <ProjectLinks />
+            <!-- <video class="video-wrapper" ref="smVideoRef" controls muted autoplay>
+                <source v-bind:src="sdDemoVideo" type="video/webm">
+            </video>               -->
         </div>
     </div>
 </div> 
-<video>
-    
-</video>
+
 </template>
 
 <script setup>
 
 import { ref, onMounted, computed } from 'vue';
-import headShot300x300 from '../../assets/images/matthew-head-shot-1-300x300.png'
+import ProjectLinks from '../home/ProjectLinks.vue';
+import sdDemoVideo from '../../assets/videos/screen-capture.webm';
+
+onMounted(() => {
+    smVideoRef.play()
+});
+
 </script>
 
 
@@ -46,11 +76,25 @@ import headShot300x300 from '../../assets/images/matthew-head-shot-1-300x300.png
     justify-content: center;
     flex-direction: column;
     width: 84%;
-    padding: 13px 10px 13px 10px;
+    /* padding: 13px 10px 13px 10px; */
     border: 3px solid #D06224;
-    background-color: #f0f0e4;
+    background-color: #D06224;
     border-radius: 3%;
-    height: 500px;
+    /* height: 500px; */
+}
+.project-title {
+    color: #f0f0e4;
+    padding: 10px 0;
+}
+.project-body-text {
+    width: 100%;
+    background-color: #f0f0e4;
+    padding: 13px 10px 13px 10px;
+    border-radius: 0 0 0 0;
+}
+.video-wrapper {
+    
+    border-radius: 3%;
 }
 
 /*Tablet sizes---------------------------------------------------------*/
