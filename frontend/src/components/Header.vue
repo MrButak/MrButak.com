@@ -24,7 +24,7 @@
 </template>
 
 
-<script async setup>
+<script setup>
 
 import { ref, onMounted, computed } from 'vue';
 import HamburgMenu from '../components/svg/HamburgMenu.vue'
@@ -77,7 +77,7 @@ header {
     justify-content: space-between;
     padding: 0px 35px 0px 0;
     height: 60px;
-    background-color: #7B3C3C;
+    background-color: #AE431E;
 }
 .icon-wrapper {
     display: flex;
