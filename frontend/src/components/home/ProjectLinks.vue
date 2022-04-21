@@ -1,13 +1,13 @@
 <template>
 <div class="project-link-wrapper-main">
     <div class="project-link-wrapper">
-        <a><img src="../../assets/icons/github-icon.svg" class="mobile-header-icon" alt="github-icon"></a>
-        <a><img src="../../assets/icons/website-icon.svg" class="mobile-header-icon" alt="github-icon"></a>
-        <a><img src="../../assets/icons/play-video-icon.svg" class="mobile-header-icon" alt="github-icon"></a>
+        <a><img class="project-icon" src="../../assets/icons/github-icon-text.svg" alt="github-icon"></a>
+        <a><img class="project-icon" src="../../assets/icons/website-icon-text.svg" alt="github-icon"></a>
+        <a><img class="project-icon" src="../../assets/icons/play-video-icon-text.svg" alt="github-icon"></a>
         <div class="project-link-text">
-            <text>Github</text>
         </div>
     </div>
+    
 </div>
 <!-- <video class="video-wrapper" ref="smVideoRef" controls muted autoplay>
     <source v-bind:src="sdDemoVideo" type="video/webm">
@@ -27,6 +27,9 @@ import { ref, onMounted, computed } from 'vue';
 
 <style scoped>
 /* light #E9C891  lighter #f0f0e4 orange #D06224 dark-rusty #AE431E olive #8A8635 */
+.project-icon {
+    width: 100px;
+}
 .project-link-wrapper-main {
     display: flex;
     flex-direction: column;
