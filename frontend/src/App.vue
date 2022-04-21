@@ -1,11 +1,11 @@
 <script setup>
 import Header from './components/Header.vue';
-import AboutMe from './components/home/AboutMe.vue'
+import HomePage from './components/home/HomePage.vue'
 </script>
 
 <template>
 <Header />
-<AboutMe />
+<HomePage />
 </template>
 
 <style>
@@ -21,7 +21,7 @@ import AboutMe from './components/home/AboutMe.vue'
 #app {
     overflow-x: hidden;
     min-height: 100vh;
-    background-color: #F0F0E4;
+    background-color: #E9C891;
     
 }
 </style>

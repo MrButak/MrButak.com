@@ -1,24 +1,26 @@
 <template>
 
-    <h2 class="home-header">Hello, I'm Matthew - Full-stack develover.</h2>
-    
-    <img class="head-shot" scr="../../assets/images/matthew-head-shot-1-300x300.png">
+<AboutMe />
 
 </template>
+
 
 <script setup>
 
 import { ref, onMounted, computed } from 'vue';
 
+import AboutMe from './AboutMe.vue';
+
 </script>
 
 
 <style>
-
-.head-shot {
-    width: 100%;
-    height: 100%;
+.home-header {
+    text-align: center;
+    font-size: 1.625rem;
+    font-size: clamp(1.625rem, 1.3rem + 1.625vw, 3.25rem);
 }
+
 /*Tablet sizes---------------------------------------------------------*/
 @media (min-width: 480px) {
 
