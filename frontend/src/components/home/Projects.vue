@@ -26,13 +26,10 @@
                 <br />
                 <p>
                     <text style="font-weight: 600">Other: </text>
-                    <br />Git, GIMP, Heroku for deployment
+                    <br />Git and Github for source control and storage, Heroku for deployment, GIMP for images
                 </p>
             </div>
             <ProjectLinks />
-            <!-- <video class="video-wrapper" ref="smVideoRef" controls muted autoplay>
-                <source v-bind:src="sdDemoVideo" type="video/webm">
-            </video>               -->
         </div>
     </div>
 </div> 
@@ -43,10 +40,10 @@
 
 import { ref, onMounted, computed } from 'vue';
 import ProjectLinks from '../home/ProjectLinks.vue';
-import sdDemoVideo from '../../assets/videos/screen-capture.webm';
+// import sdDemoVideo from '../../assets/videos/screen-capture.webm';
 
 onMounted(() => {
-    smVideoRef.play()
+    // smVideoRef.play()
 });
 
 </script>
@@ -85,6 +82,8 @@ onMounted(() => {
 .project-title {
     color: #f0f0e4;
     padding: 10px 0;
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.425rem + 0.375vw, 1.875rem);
 }
 .project-body-text {
     width: 100%;

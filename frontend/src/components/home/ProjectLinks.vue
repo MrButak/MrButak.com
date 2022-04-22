@@ -1,26 +1,15 @@
 <template>
-<!-- <div class="project-link-wrapper-main"> -->
-    <div class="project-link-wrapper">
-        <a><img class="project-icon" src="../../assets/icons/github-icon-text.svg" alt="github-icon"></a>
-        <a><img class="project-icon" src="../../assets/icons/website-icon-text.svg" alt="github-icon"></a>
-        <a><img class="project-icon" src="../../assets/icons/play-video-icon-text.svg" alt="github-icon"></a>
-        
-    </div>
-    
-<!-- </div> -->
-<!-- <video class="video-wrapper" ref="smVideoRef" controls muted autoplay>
-    <source v-bind:src="sdDemoVideo" type="video/webm">
-</video>               -->
+<div class="project-link-wrapper">
+    <a><img class="project-icon" src="../../assets/icons/github-icon-text.svg" alt="github-icon"></a>
+    <a><img class="project-icon" src="../../assets/icons/website-icon-text.svg" alt="github-icon"></a>
+    <a><img class="project-icon" src="../../assets/icons/play-video-icon-text.svg" alt="github-icon"></a>    
+</div>
 
 </template>
 
 <script setup>
 
 import { ref, onMounted, computed } from 'vue';
-
-
-
-
 </script>
 
 
@@ -35,7 +24,7 @@ import { ref, onMounted, computed } from 'vue';
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    padding: 10px 0 0 0;
+    padding: 15.25px 0 5.25px 0;
 }
 
 /*Tablet sizes---------------------------------------------------------*/
