@@ -9,24 +9,24 @@
             
             <div class="project-body-text">
                   
-                <p><text style="font-weight: 600">About: </text>
+                <p><text class="project-subheader">About: </text>
                     <br />
                     {{ projectArry[projectIndex].about }}
                 </p>
                 
                 <p>
                     <br />
-                    <text style="font-weight: 600">Frontend: </text>
+                    <text class="project-subheader">Frontend: </text>
                     <br />{{ projectArry[projectIndex].frontend }}
                 </p>
                 <br />
                 <p>
-                    <text style="font-weight: 600">Backend: </text>
+                    <text class="project-subheader">Backend: </text>
                     <br />{{ projectArry[projectIndex].backend }}
                 </p>
                 <br />
                 <p>
-                    <text style="font-weight: 600">Other: </text>
+                    <text class="project-subheader">Other: </text>
                     <br />{{ projectArry[projectIndex].other }}
                 </p>
             </div>
@@ -63,7 +63,7 @@ let project1 = {
 };
 let project2 = {
     title: 'Stories App',
-    about: 'A server-side rendered, message-board style app with login, user sessions, an intergrated postgresql database.',
+    about: 'A server-side rendered, message-board style app with login, user sessions, and an intergrated postgresql database.',
     frontend: 'Esj, Vanilla CSS',
     backend: 'Node.js, Express.js, Postgresql',
     other: 'Git and Github for source control and storage, Heroku for deployment'
@@ -172,6 +172,10 @@ onMounted(() => {
     padding: 10px 0;
     font-size: 1.5rem;
     font-size: clamp(1.5rem, 1.425rem + 0.375vw, 1.875rem);
+}
+.project-subheader {
+    font-family: Roboto;
+    font-weight: 600;
 }
 .project-body-text {
     width: 100%;
