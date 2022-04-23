@@ -22,6 +22,7 @@ import headShot300x300 from '../../assets/images/matthew-head-shot-1-300x300.png
 
 <style scoped>
 /* light #E9C891  lighter #f0f0e4 orange #D06224 dark-rusty #AE431E olive #8A8635 */
+/* darker rust #7B3C3C */
 .head-shot-300 {
     max-width: 25%;
     border-radius: 50%;
@@ -51,7 +52,7 @@ import headShot300x300 from '../../assets/images/matthew-head-shot-1-300x300.png
     padding: 13px 10px 13px 10px;
     border: 3px solid #D06224;
     background-color: #f0f0e4;
-    border-radius: 3%;
+    border-radius: 0%;
 }
 .about-me-text-wrapper {
     display: flex;

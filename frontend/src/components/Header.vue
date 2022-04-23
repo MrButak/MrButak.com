@@ -3,9 +3,9 @@
 <header class="menu">
       <div class="menu-wrap">
           <div class="icon-wrapper">
-            <a><img src="../assets/icons/github-icon.svg" class="mobile-header-icon" alt="github-icon"></a>
-            <a><img src="../assets/icons/email-icon.svg" class="mobile-header-icon" alt="github-icon"></a>
-            <a><img src="../assets/icons/linkedin-icon.svg" class="mobile-header-icon" alt="github-icon"></a>
+            <a href="https://github.com/MrButak" target="_blank" rel="noreferrer noopener"><img src="../assets/icons/github-icon.svg" class="mobile-header-icon" alt="github-icon"></a>
+            <a href="mailto: mspence5555@gmail.com"><img src="../assets/icons/email-icon.svg" class="mobile-header-icon" alt="github-icon"></a>
+            <a href="https://www.linkedin.com/in/matthew-w-spence" target="_blank" rel="noreferrer noopener"><img src="../assets/icons/linkedin-icon.svg" class="mobile-header-icon" alt="github-icon"></a>
           </div>
           <input type="checkbox" id="checkbox">
           <nav>
@@ -28,22 +28,12 @@
 
 import { ref, onMounted, computed } from 'vue';
 import HamburgMenu from '../components/svg/HamburgMenu.vue'
-//import Schedule from './Schedule.vue';
-// let conference = ref();
-// let school = ref();
-// let displaySchools = computed(() => !!conference.value)
-// let conferences = computed(() => Object.keys(conAndSchObject));
-// let schools = computed(() => conAndSchObject[conference.value]);
-// // to call functions in Schedule.vue component
-// let scheduleComponent = ref(Schedule); 
-// defineExpose({
-//      Schedule
-//  });
-// onMounted(() => {
-// });
+
 </script>
 
 <style>
+/* light #E9C891  lighter #f0f0e4 orange #D06224 dark-rusty #AE431E olive #8A8635 */
+/* darker rust #7B3C3C */
 
 /*mobile first*/
 
@@ -94,8 +84,8 @@ header {
 }
 nav {
     position: absolute;
-    background-color: #68BDE1;
-    top: 60px;
+    background-color: #AE431E;
+    top: 59px;
     left:0;
     width: 100%; 
 }
@@ -111,7 +101,7 @@ nav ul li {
 nav ul li a {
     display: inline-block;
     padding: 12px;
-    color: #7B3C3C;
+    color: #f0f0e4;
     font-weight: 700;
     text-decoration: none;
     letter-spacing: 0.05em;
@@ -126,7 +116,7 @@ nav ul li a:hover, nav ul li a:focus {
     max-height: 190px;
     padding: 15px 0;
     transition: all 0.5s;
-    border: 1px solid #DB5F29;
+    /* border: 1px solid #DB5F29; */
 }
 /*Header end*/
 

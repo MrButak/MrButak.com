@@ -8,7 +8,7 @@
             <h3 class="project-title">{{ projectArry[projectIndex].title }}</h3>
             
             <div class="project-body-text">
-                  
+                <!-- <img class="project-image" src="../../assets/images/salem-smoothies-preview.png"/> -->
                 <p><text class="project-subheader">About: </text>
                     <br />
                     {{ projectArry[projectIndex].about }}
@@ -31,8 +31,8 @@
                 </p>
             </div>
             <div class="project-link-wrapper">
-                <a><img class="project-icon" src="../../assets/icons/github-icon-text.svg" alt="github-icon"></a>
-                <a><img class="project-icon" src="../../assets/icons/website-icon-text.svg" alt="github-icon"></a>
+                <a v-bind:href="projectArry[projectIndex].github" target="_blank" rel="noreferrer noopener"><img class="project-icon" src="../../assets/icons/github-icon-text.svg" alt="github-icon"></a>
+                <a v-bind:href="projectArry[projectIndex].website" target="_blank" rel="noreferrer noopener"><img class="project-icon" src="../../assets/icons/website-icon-text.svg" alt="github-icon"></a>
                 <a><img class="project-icon" src="../../assets/icons/play-video-icon-text.svg" alt="github-icon"></a>    
             </div>
         </div>
@@ -58,7 +58,9 @@ let project1 = {
     about: 'For a local smoothie bussiness, this webapp accepts payment via stripe, sends order confermation e-mails, and integrates a postgresql database to add / remove menu items.',
     frontend: 'Vue, Vanilla JavaScript, HTML, Vanilla CSS',
     backend: 'Node.js, Express.js, Postgresql, Stripe API, STMP configuration',
-    other: 'Git and Github for source control and storage, Heroku for deployment, GIMP for images'
+    other: 'Git and Github for source control and storage, Heroku for deployment, GIMP for images',
+    github: 'https://github.com/MrButak/e-shop',
+    website: 'https://salem-smoothies.herokuapp.com'
 
 };
 let project2 = {
@@ -66,7 +68,9 @@ let project2 = {
     about: 'A server-side rendered, message-board style app with login, user sessions, and an intergrated postgresql database.',
     frontend: 'Esj, Vanilla CSS',
     backend: 'Node.js, Express.js, Postgresql',
-    other: 'Git and Github for source control and storage, Heroku for deployment'
+    other: 'Git and Github for source control and storage, Heroku for deployment',
+    github: 'https://github.com/MrButak/stories',
+    website: 'https://mrbutak-story-app.herokuapp.com/login'
 };
 projectArry.push(project1, project2);
 
@@ -105,6 +109,9 @@ onMounted(() => {
 
 <style scoped>
 /* light #E9C891  lighter #f0f0e4 orange #D06224 dark-rusty #AE431E olive #8A8635 */
+/* .project-image {
+    width: 100%;
+} */
 .arrow-icon-left {
     width: 100px;
 }
@@ -164,12 +171,13 @@ onMounted(() => {
     /* padding: 13px 10px 13px 10px; */
     border: 3px solid #D06224;
     background-color: #D06224;
-    border-radius: 3%;
+    border-radius: 0%;
     
 }
 .project-title {
     color: #f0f0e4;
     padding: 10px 0;
+    font-family: Raleway;
     font-size: 1.5rem;
     font-size: clamp(1.5rem, 1.425rem + 0.375vw, 1.875rem);
 }
@@ -182,7 +190,7 @@ onMounted(() => {
     background-color: #f0f0e4;
     padding: 13px 10px 13px 10px;
     border-radius: 0 0 0 0;
-    height: 500px;
+    height: 400px;
     overflow-x: scroll;
 }
 .video-wrapper {
@@ -200,6 +208,11 @@ onMounted(() => {
     justify-content: center;
     width: 70%;    
 }
+.project-body-text {
+    
+    height: 400px;
+    overflow-x: scroll;
+}
 .nav-wrapper-main {
     width: 70%;
 }
@@ -214,7 +227,7 @@ onMounted(() => {
 } 
 
 .home-content-wrapper {
-    max-width: 600px;
+    max-width: 800px;
 }
 .nav-wrapper-main {
     max-width: 600px;
