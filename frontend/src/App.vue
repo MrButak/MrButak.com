@@ -17,16 +17,24 @@ import Projects from './components/home/Projects.vue'
   src: local("Roboto"),
    url(./assets/fonts/Roboto-Regular.ttf) format("truetype");
 }
+@font-face {
+  font-family: "Railway";
+  src: local("Railway"),
+   url(./assets/fonts/Railway-Regular.ttf) format("truetype");
+}
 * {
     
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     /*univeral fluid text size*/
-    font-size: 1.1875rem;
-    font-size: clamp(1.1875rem, 1.175rem + 0.0625vw, 1.25rem);
+    font-size: 1.0625rem;
+font-size: clamp(1.0625rem, 0.953125rem + 0.546875vw, 1.5rem);
+    
 }
-
+p, text {
+    font-family: Railway;
+}
 #app {
     overflow-x: hidden;
     min-height: 100vh;

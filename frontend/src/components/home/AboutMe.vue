@@ -51,7 +51,7 @@ import headShot300x300 from '../../assets/images/matthew-head-shot-1-300x300.png
     padding: 13px 10px 13px 10px;
     border: 3px solid #D06224;
     background-color: #f0f0e4;
-    border-radius: 3%;
+    border-radius: 0%;
 }
 .about-me-text-wrapper {
     display: flex;
