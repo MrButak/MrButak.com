@@ -18,9 +18,9 @@ import Projects from './components/home/Projects.vue'
    url(./assets/fonts/Roboto-Regular.ttf) format("truetype");
 }
 @font-face {
-  font-family: "Railway";
-  src: local("Railway"),
-   url(./assets/fonts/Railway-Regular.ttf) format("truetype");
+  font-family: "Raleway";
+  src: local("Raleway"),
+   url(./assets/fonts/Raleway-Regular.ttf) format("truetype");
 }
 * {
     

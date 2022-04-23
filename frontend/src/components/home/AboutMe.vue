@@ -22,6 +22,7 @@ import headShot300x300 from '../../assets/images/matthew-head-shot-1-300x300.png
 
 <style scoped>
 /* light #E9C891  lighter #f0f0e4 orange #D06224 dark-rusty #AE431E olive #8A8635 */
+/* darker rust #7B3C3C */
 .head-shot-300 {
     max-width: 25%;
     border-radius: 50%;
