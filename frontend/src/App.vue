@@ -1,7 +1,9 @@
 <script setup>
 import Header from './components/Header.vue';
 import AboutMe from './components/home/AboutMe.vue';
-import Projects from './components/home/Projects.vue'
+import Projects from './components/home/Projects.vue';
+import Resume from './components/home/Resume.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
@@ -9,6 +11,8 @@ import Projects from './components/home/Projects.vue'
 <div class="spacer"></div>
 <AboutMe />
 <Projects />
+<Resume />
+<Footer />
 </template>
 
 <style>
@@ -48,6 +52,7 @@ p, text {
     text-align: center;
     font-size: 1.625rem;
     font-size: clamp(1.625rem, 1.3rem + 1.625vw, 3.25rem);
+    font-weight: 200;
 }
 
 .spacer {
