@@ -177,6 +177,7 @@ onMounted(() => {
 .project-title {
     color: #f0f0e4;
     padding: 10px 0;
+    font-family: Raleway;
     font-size: 1.5rem;
     font-size: clamp(1.5rem, 1.425rem + 0.375vw, 1.875rem);
 }
@@ -226,7 +227,7 @@ onMounted(() => {
 } 
 
 .home-content-wrapper {
-    max-width: 600px;
+    max-width: 800px;
 }
 .nav-wrapper-main {
     max-width: 600px;
