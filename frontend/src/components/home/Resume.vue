@@ -7,8 +7,8 @@
         <div class="resume-wrapper">
             <img class="resume" v-bind:src="Resume" />
             <span class="resume-overlay">
-                <img class="resume-icon" v-bind:src="dlIcon" />
-                <img class="resume-icon" v-bind:src="viewIcon" />
+                <a v-bind:href="ResumePdf" download=""><img class="resume-icon" v-bind:src="dlIcon" /></a>
+                <a v-bind:href="ResumePdf" target="_blank" rel="noreferrer noopener"><img class="resume-icon" v-bind:src="viewIcon" /></a>
             </span>
         </div>
     </div>
@@ -21,6 +21,7 @@
 import Resume from '../../assets/images/matthew-spence-resume.png';
 import dlIcon from '../../assets/icons/download-icon.svg';
 import viewIcon from '../../assets/icons/view-icon.svg';
+import ResumePdf from '../../assets/misc/matthew-spence-resume.pdf';
 </script>
 
 <style>
