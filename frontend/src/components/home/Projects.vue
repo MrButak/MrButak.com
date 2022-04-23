@@ -70,6 +70,7 @@ let project2 = {
 };
 projectArry.push(project1, project2);
 
+// show projectArry[projectIndex] on dom
 let projectIndex = ref(0);
 
 function prevProject() {
@@ -87,6 +88,7 @@ function nextProject() {
     };
     projectIndex.value++;
 };
+
 
 let currentProjectCount = computed(() => {
     return projectIndex.value + 1;
@@ -112,7 +114,6 @@ onMounted(() => {
     width: 100px;
 }
 .project-nav-text {
-    /* color: #AE431E; */
     font-weight: 900;
     font-size: 1.25rem;
     font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
@@ -192,22 +193,13 @@ onMounted(() => {
 } 
 
 .home-content-wrapper {
-    flex-direction: row;
     justify-content: center;
-    width: 70%;
-    padding: 20px; 
-      
+    width: 70%;    
 }
-.nav-wrapper-left {
-    position: absolute;
-    padding: 50% 0 50% 0;
+.nav-wrapper-main {
     width: 70%;
 }
-.nav-wrapper-right {
-    position: absolute;
-    padding: 50% 0 50% 0;
-    width: 70%;
-}
+
 
 }
 /*Desktop sizes*-----------------------------------------------------*/
@@ -220,16 +212,9 @@ onMounted(() => {
 .home-content-wrapper {
     max-width: 600px;
 }
-.nav-wrapper-left {
-    position: absolute;
-    padding: 50% 0 50% 0;
+.nav-wrapper-main {
     max-width: 600px;
 }
-.nav-wrapper-right {
-    position: absolute;
-    padding: 50% 0 50% 0;
-    max-width: 600px;
-}  
 }
 
 </style>
