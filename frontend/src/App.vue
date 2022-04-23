@@ -12,7 +12,13 @@ import Projects from './components/home/Projects.vue'
 </template>
 
 <style>
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+   url(./assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
 * {
+    
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -29,6 +35,7 @@ import Projects from './components/home/Projects.vue'
 }
 
 .home-header {
+    font-family: Roboto;
     padding: 0 8px;
     text-align: center;
     font-size: 1.625rem;
