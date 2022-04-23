@@ -5,33 +5,44 @@
     <h2 class="home-header">Here are some of my notable projects.</h2>
     <div class="full-flex-div">
         <div class="home-content-wrapper">
-            <h3 class="project-title">E-Shop</h3>
+            <h3 class="project-title">{{ projectArry[projectIndex].title }}</h3>
             
             <div class="project-body-text">
+                  
                 <p><text style="font-weight: 600">About: </text>
                     <br />
-                    For a local smoothie bussiness, this webapp accepts payment via stripe, sends order confermation e-mails, and integrates a postgresql database to add / remove menu items.
+                    {{ projectArry[projectIndex].about }}
                 </p>
                 
                 <p>
                     <br />
                     <text style="font-weight: 600">Frontend: </text>
-                    <br />Vue, Vanilla JavaScript, HTML, Vanilla CSS
+                    <br />{{ projectArry[projectIndex].frontend }}
                 </p>
                 <br />
                 <p>
                     <text style="font-weight: 600">Backend: </text>
-                    <br />Node.js, Express.js, Postgresql, Stripe API, STMP configuration
+                    <br />{{ projectArry[projectIndex].backend }}
                 </p>
                 <br />
                 <p>
                     <text style="font-weight: 600">Other: </text>
-                    <br />Git and Github for source control and storage, Heroku for deployment, GIMP for images
+                    <br />{{ projectArry[projectIndex].other }}
                 </p>
             </div>
-            <ProjectLinks />
+            <div class="project-link-wrapper">
+                <a><img class="project-icon" src="../../assets/icons/github-icon-text.svg" alt="github-icon"></a>
+                <a><img class="project-icon" src="../../assets/icons/website-icon-text.svg" alt="github-icon"></a>
+                <a><img class="project-icon" src="../../assets/icons/play-video-icon-text.svg" alt="github-icon"></a>    
+            </div>
         </div>
     </div>
+<div class="nav-wrapper-main">
+    <img @click="prevProject()" class="arrow-icon-left" src="../../assets/icons/horizontal-arrow-icon.svg" />
+    <text class="project-nav-text">{{ currentProjectCount }} / {{ projectArry.length }}</text>
+    <img @click="nextProject()" class="arrow-icon-right" src="../../assets/icons/horizontal-arrow-icon.svg" />
+</div>
+    
 </div> 
 
 </template>
@@ -39,18 +50,94 @@
 <script setup>
 
 import { ref, onMounted, computed } from 'vue';
-import ProjectLinks from '../home/ProjectLinks.vue';
-// import sdDemoVideo from '../../assets/videos/screen-capture.webm';
+
+let projectArry = [];  
+
+let project1 = {
+    title: 'E-Shop',
+    about: 'For a local smoothie bussiness, this webapp accepts payment via stripe, sends order confermation e-mails, and integrates a postgresql database to add / remove menu items.',
+    frontend: 'Vue, Vanilla JavaScript, HTML, Vanilla CSS',
+    backend: 'Node.js, Express.js, Postgresql, Stripe API, STMP configuration',
+    other: 'Git and Github for source control and storage, Heroku for deployment, GIMP for images'
+
+};
+let project2 = {
+    title: 'Stories App',
+    about: 'A server-side rendered, message-board style app with login, user sessions, an intergrated postgresql database.',
+    frontend: 'Esj, Vanilla CSS',
+    backend: 'Node.js, Express.js, Postgresql',
+    other: 'Git and Github for source control and storage, Heroku for deployment'
+};
+projectArry.push(project1, project2);
+
+let projectIndex = ref(0);
+
+function prevProject() {
+
+    if(projectIndex.value < 1) {
+        return;
+    };
+    projectIndex.value--;
+};
+
+function nextProject() {
+
+    if(projectArry.length <= projectIndex.value + 1) {
+        return;
+    };
+    projectIndex.value++;
+};
+
+let currentProjectCount = computed(() => {
+    return projectIndex.value + 1;
+});
 
 onMounted(() => {
+    // initProjectArry();
     // smVideoRef.play()
 });
+
 
 </script>
 
 
 <style scoped>
 /* light #E9C891  lighter #f0f0e4 orange #D06224 dark-rusty #AE431E olive #8A8635 */
+.arrow-icon-left {
+    width: 100px;
+}
+.arrow-icon-right {
+    
+    transform: rotateY(180deg);
+    width: 100px;
+}
+.project-nav-text {
+    /* color: #AE431E; */
+    font-weight: 900;
+    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
+
+}
+.nav-wrapper-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 0 7%;
+}
+/* project links start */
+.project-icon {
+    width: 70px;
+}
+
+.project-link-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 15.25px 0 5.25px 0;
+}
+/* project links end */
 
 .home-page-wrapper-main {
     display: flex;
@@ -72,12 +159,12 @@ onMounted(() => {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 84%;
+    width: 90%;
     /* padding: 13px 10px 13px 10px; */
     border: 3px solid #D06224;
     background-color: #D06224;
     border-radius: 3%;
-    /* height: 500px; */
+    
 }
 .project-title {
     color: #f0f0e4;
@@ -90,6 +177,8 @@ onMounted(() => {
     background-color: #f0f0e4;
     padding: 13px 10px 13px 10px;
     border-radius: 0 0 0 0;
+    height: 500px;
+    overflow-x: scroll;
 }
 .video-wrapper {
     
@@ -109,6 +198,16 @@ onMounted(() => {
     padding: 20px; 
       
 }
+.nav-wrapper-left {
+    position: absolute;
+    padding: 50% 0 50% 0;
+    width: 70%;
+}
+.nav-wrapper-right {
+    position: absolute;
+    padding: 50% 0 50% 0;
+    width: 70%;
+}
 
 }
 /*Desktop sizes*-----------------------------------------------------*/
@@ -121,7 +220,16 @@ onMounted(() => {
 .home-content-wrapper {
     max-width: 600px;
 }
-    
+.nav-wrapper-left {
+    position: absolute;
+    padding: 50% 0 50% 0;
+    max-width: 600px;
+}
+.nav-wrapper-right {
+    position: absolute;
+    padding: 50% 0 50% 0;
+    max-width: 600px;
+}  
 }
 
 </style>
