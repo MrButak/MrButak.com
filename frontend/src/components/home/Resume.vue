@@ -3,6 +3,11 @@
 
 <div class="home-page-wrapper-main">
     <h2 class="home-header">And here is my resume, thank you for considering me.</h2>
+    <!-- <div class="lines-under-header-wrapper">
+        <div class="line-one"></div>
+        <div class="line-two"></div>
+        <div class="line-three"></div>
+    </div> -->
     <div class="full-flex-div">
         <div class="resume-wrapper">
             <img class="resume" v-bind:src="Resume" />

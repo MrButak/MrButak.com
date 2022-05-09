@@ -17,14 +17,16 @@ import Footer from './components/Footer.vue';
 
 <style>
 @font-face {
-  font-family: "Roboto";
-  src: local("Roboto"),
-   url(./assets/fonts/Roboto-Regular.ttf) format("truetype");
+    font-family: "Roboto";
+    src: local("Roboto"),
+    url(./assets/fonts/Roboto-Regular.ttf) format("truetype");
+    font-display: swap;
 }
 @font-face {
-  font-family: "Raleway";
-  src: local("Raleway"),
-   url(./assets/fonts/Raleway-Regular.ttf) format("truetype");
+    font-family: "Raleway";
+    src: local("Raleway"),
+    url(./assets/fonts/Raleway-Regular.ttf) format("truetype");
+    font-display: swap;
 }
 * {
     
@@ -33,7 +35,8 @@ import Footer from './components/Footer.vue';
     padding: 0px;
     /*univeral fluid text size*/
     font-size: 1.0625rem;
-font-size: clamp(1.0625rem, 0.953125rem + 0.546875vw, 1.5rem);
+    font-size: clamp(1.0625rem, 0.953125rem + 0.546875vw, 1.5rem);
+    
     
 }
 p, text {
@@ -45,18 +48,47 @@ p, text {
     background-color: #E9C891;
     
 }
-
 .home-header {
     font-family: Roboto;
     padding: 0 8px;
     text-align: center;
     font-size: 1.625rem;
     font-size: clamp(1.625rem, 1.3rem + 1.625vw, 3.25rem);
-    font-weight: 200;
+    font-weight: 400;  
+}
+.lines-under-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.line-one {
+
+    width: 85%;
+    height: 10px;
+    background-color: #D06224;
+    border: 1px solid #f0f0e4;
+}
+.line-two {
+    position: absolute;
+    margin: 0 0 -10px 0;
+    width: 70%;
+    height: 10px;
+    background-color: #AE431E;
+    border: 1px solid #f0f0e4;
+}
+.line-three {
+    position: absolute;
+    margin: 0 0 -20px 0;
+    width: 55%;
+    height: 10px;
+    background-color: #8A8635;
+    border: 1px solid #f0f0e4;
 }
 
 .spacer {
-    width: 100%;
+    width: 30%;
     height: 50px;
 }
 /*Tablet sizes---------------------------------------------------------*/

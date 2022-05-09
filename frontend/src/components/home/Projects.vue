@@ -3,6 +3,11 @@
 
 <div class="home-page-wrapper-main">
     <h2 class="home-header">Here are some of my notable projects.</h2>
+    <!-- <div class="lines-under-header-wrapper">
+        <div class="line-one"></div>
+        <div class="line-two"></div>
+        <div class="line-three"></div>
+    </div> -->
     <div class="full-flex-div">
         <div class="home-content-wrapper">
             <h3 class="project-title">{{ projectArry[projectIndex].title }}</h3>
@@ -14,7 +19,7 @@
                     {{ projectArry[projectIndex].about }}
                 </p>
                 
-                <p>
+                <!-- <p>
                     <br />
                     <text class="project-subheader">Frontend: </text>
                     <br />{{ projectArry[projectIndex].frontend }}
@@ -28,7 +33,7 @@
                 <p>
                     <text class="project-subheader">Other: </text>
                     <br />{{ projectArry[projectIndex].other }}
-                </p>
+                </p> -->
             </div>
             <div class="project-link-wrapper">
                 <a v-bind:href="projectArry[projectIndex].github" target="_blank" rel="noreferrer noopener"><img class="project-icon" src="../../assets/icons/github-icon-text.svg" alt="github-icon"></a>
@@ -180,6 +185,7 @@ onMounted(() => {
     font-family: Raleway;
     font-size: 1.5rem;
     font-size: clamp(1.5rem, 1.425rem + 0.375vw, 1.875rem);
+    
 }
 .project-subheader {
     font-family: Roboto;

@@ -59,6 +59,7 @@ import HamburgMenu from '../components/svg/HamburgMenu.vue'
     
 }
 nav {
+    z-index: 1;
     position: absolute;
     background-color: #AE431E;
     top: 59px;
