@@ -1,12 +1,19 @@
 <template>
 <div class="home-page-wrapper-main">
     <h2 class="home-header">Hello, I'm Matthew - Full-stack develover.</h2>
+    <!-- <div class="lines-under-header-wrapper">
+        <div class="line-one"></div>
+        <div class="line-two"></div>
+        <div class="line-three"></div>
+    </div> -->
     <div class="full-flex-div">
         <div class="home-content-wrapper">
             <img class="head-shot-300" v-bind:src="headShot300x300" />
             <div class="about-me-text-wrapper">
                 <p>I have the most experience in JavaScript, Python, Vue, Node.js, Express.js, Postgres, Git, and Deployment</p>
+
             </div>
+            
         </div>
     </div>
 </div>    

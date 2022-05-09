@@ -37,31 +37,7 @@ import HamburgMenu from '../components/svg/HamburgMenu.vue'
 
 /*mobile first*/
 
-/*footer start*/
-.footerWrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    /* grid-template-rows: auto 1fr auto; */
-}
-.footerTop {
-    background-color: #2d2d2d;
-    color: white;
-}
-.footerBottom {
-    background-color: #171717;
-    color: white;
-}
-/*footer end*/s
 
-/*Header start*/
-header {
-    /* background-color: #FF9A76; */
-    padding: 10px 0;
-    box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
-    /* is there a better way to push to footer to the bottom of view port? */
-    /* margin-bottom: 100vh; */
-}
 .menu-wrap {
     display: flex;
     justify-content: space-between;
@@ -83,6 +59,7 @@ header {
     
 }
 nav {
+    z-index: 1;
     position: absolute;
     background-color: #AE431E;
     top: 59px;
