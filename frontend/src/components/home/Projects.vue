@@ -11,7 +11,7 @@
         <div class="project-icon-wrapper">
             <span class="project-icon"><GithubTextIcon /></span>
             <span class="project-icon"><WebsiteTextIcon /></span>
-            <span class="project-icon"><ViewMoreTextIcon /></span>
+            <span class="project-icon view-more-icon"><ViewMoreTextIcon /></span>
                 <!-- <a href="" target="_blank" rel="noreferrer noopener"><img class="project-icon" src="../../assets/icons/github-icon-text.svg" alt="github-icon"></a>
                 <a href="" target="_blank" rel="noreferrer noopener"><img class="project-icon" src="../../assets/icons/website-icon-text.svg" alt="github-icon"></a>
                 <a><img class="project-icon" src="../../assets/icons/view-icon.svg" alt="github-icon"></a> -->
@@ -50,10 +50,8 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
 // rgb(216, 179, 132)
 // rgb(94, 69, 75)
 }
-.project-icon {
-    
-    fill: #f0f0e4;
-}
+
+
 .project-wrapper-main {
     display: flex;
     width: 100%;
@@ -107,6 +105,18 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        .project-icon {
+    
+            fill: #f0f0e4;
+
+            
+        }
+
+        .view-more-icon {
+            padding: .05rem 0 0 0;
+            
+        }
     }
 }
 

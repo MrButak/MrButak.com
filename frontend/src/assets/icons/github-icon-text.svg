@@ -43,7 +43,7 @@
      showgrid="false"
      inkscape:zoom="9.44"
      inkscape:cx="10.487288"
-     inkscape:cy="12.5"
+     inkscape:cy="-4.9766949"
      inkscape:window-x="0"
      inkscape:window-y="50"
      inkscape:window-maximized="1"
@@ -55,12 +55,14 @@
      inkscape:connector-curvature="0" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f0f0e4;fill-opacity:1;stroke:none"
-     x="0.140625"
-     y="41.34375"
-     id="text846"><tspan
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.08477211px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f0f0e4;fill-opacity:1;stroke:none;stroke-width:1.00529826"
+     x="-0.41913429"
+     y="42.10603"
+     id="text846"
+     transform="scale(1.0183881,0.98194391)"><tspan
        sodipodi:role="line"
        id="tspan844"
-       x="0.140625"
-       y="41.34375">Github</tspan></text>
+       x="-0.41913429"
+       y="42.10603"
+       style="stroke-width:1.00529826">Github</tspan></text>
 </svg>
