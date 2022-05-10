@@ -1,0 +1,151 @@
+<template>
+    <svg class="website-text-icon"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Capa_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 47.999999 41.999999"
+   xml:space="preserve"
+   sodipodi:docname="view-icon-text.svg"
+   width="48"
+   height="42"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
+   id="metadata7953"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs7951" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="2020"
+   inkscape:window-height="1036"
+   id="namedview7949"
+   showgrid="false"
+   inkscape:zoom="6.0115888"
+   inkscape:cx="28.600873"
+   inkscape:cy="33.91706"
+   inkscape:window-x="0"
+   inkscape:window-y="50"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Capa_1" />
+<g
+   id="g8499"
+   transform="matrix(0.18912615,0,0,0.19999999,2.9999997,26.807401)"
+   style="fill:#f0f0e4;fill-opacity:1"><path
+     inkscape:connector-curvature="0"
+     id="path7916"
+     d="M 111.037,-134.03701 C 49.712,-134.03701 0,-69.037005 0,-69.037005 c 0,0 49.712,64.9999999 111.037,64.9999999 61.324,0 111.037,-64.9999999 111.037,-64.9999999 0,0 -49.713,-65.000005 -111.037,-65.000005 z m 0,110.000005 c -24.852,0 -45,-20.148 -45,-45 0,-24.852 20.148,-45.000005 45,-45.000005 24.852,0 45,20.148005 45,45.000005 0,24.852 -20.148,45 -45,45 z m 17.678,-62.678 c 4.523,4.524 7.322,10.774 7.322,17.678 0,13.807 -11.193,25 -25,25 -13.807,0 -25,-11.193 -25,-25 0,-6.903 2.799,-13.153 7.322,-17.678 l 17.678,17.678 z"
+     style="fill:#f0f0e4;fill-opacity:1" /></g>
+<g
+   id="g7918"
+   transform="translate(0,-180.07401)">
+</g>
+<g
+   id="g7920"
+   transform="translate(0,-180.07401)">
+</g>
+<g
+   id="g7922"
+   transform="translate(0,-180.07401)">
+</g>
+<g
+   id="g7924"
+   transform="translate(0,-180.07401)">
+</g>
+<g
+   id="g7926"
+   transform="translate(0,-180.07401)">
+</g>
+<g
+   id="g7928"
+   transform="translate(0,-180.07401)">
+</g>
+<g
+   id="g7930"
+   transform="translate(0,-180.07401)">
+</g>
+<g
+   id="g7932"
+   transform="translate(0,-180.07401)">
+</g>
+<g
+   id="g7934"
+   transform="translate(0,-180.07401)">
+</g>
+<g
+   id="g7936"
+   transform="translate(0,-180.07401)">
+</g>
+<g
+   id="g7938"
+   transform="translate(0,-180.07401)">
+</g>
+<g
+   id="g7940"
+   transform="translate(0,-180.07401)">
+</g>
+<g
+   id="g7942"
+   transform="translate(0,-180.07401)">
+</g>
+<g
+   id="g7944"
+   transform="translate(0,-180.07401)">
+</g>
+<g
+   id="g7946"
+   transform="translate(0,-180.07401)">
+</g>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f0f0e4;fill-opacity:1;stroke:none"
+   x="4.9804688"
+   y="41.84375"
+   id="text8503"><tspan
+     sodipodi:role="line"
+     id="tspan8501"
+     x="4.9804688"
+     y="41.84375">More</tspan></text>
+</svg>
+</template>
+
+<script>
+
+</script>
+
+<style scoped>
+.website-text-icon {
+    
+    width: 2.9rem;
+    height: 3.1rem;
+    padding: 3px 0 0 0;
+    
+    
+    
+    
+}
+/*Tablet sizes*-----------------------------------------------------*/
+@media (min-width: 480px) {
+    .website-text-icon {
+    
+        
+    }
+}
+/*Desktop sizes*-----------------------------------------------------*/
+/*
+@media (min-width: 1023px) {
+    
+}*/
+</style>

@@ -43,7 +43,8 @@ import HamburgMenu from '../components/svg/HamburgMenu.vue'
     justify-content: space-between;
     padding: 0px 35px 0px 0;
     height: 60px;
-    background-color: #AE431E;
+    background-color: #5E454B;
+    width: 100%;
 }
 .icon-wrapper {
     display: flex;
@@ -106,6 +107,7 @@ nav ul li a:hover, nav ul li a:focus {
     /*Header start*/
     .menu-wrap {
         height: 60px;
+        width: 100%
     }
     /* nav {
         top: 60px;

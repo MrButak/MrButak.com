@@ -18,6 +18,8 @@
     width: 100%;
     height: 50px;
     background-color: #7B3C3C;
+    position: absolute;
+    inset: 100% 0 0 0;
 }
 .footer-text {
     color: #f0f0e4;

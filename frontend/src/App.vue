@@ -4,14 +4,13 @@ import AboutMe from './components/home/AboutMe.vue';
 import Projects from './components/home/Projects.vue';
 import Resume from './components/home/Resume.vue';
 import Footer from './components/Footer.vue';
+import CircularMenu from './components/CircularMenu.vue';
 </script>
 
 <template>
 <Header />
-<div class="spacer"></div>
-<AboutMe />
+<!-- <CircularMenu /> -->
 <Projects />
-<Resume />
 <Footer />
 </template>
 
@@ -34,63 +33,24 @@ import Footer from './components/Footer.vue';
     margin: 0px;
     padding: 0px;
     /*univeral fluid text size*/
-    font-size: 1.0625rem;
-    font-size: clamp(1.0625rem, 0.953125rem + 0.546875vw, 1.5rem);
+    /* font-size: 1.0625rem;
+    font-size: clamp(1.0625rem, 0.953125rem + 0.546875vw, 1.5rem); */
     
     
+}
+html {
+    background-color: #F3F0D7;
 }
 p, text {
     font-family: Railway;
 }
 #app {
-    overflow-x: hidden;
-    min-height: 100vh;
-    background-color: #E9C891;
+    
+    /* min-height: 100vh; */
+    /* background-color: #E9C891; */
     
 }
-.home-header {
-    font-family: Roboto;
-    padding: 0 8px;
-    text-align: center;
-    font-size: 1.625rem;
-    font-size: clamp(1.625rem, 1.3rem + 1.625vw, 3.25rem);
-    font-weight: 400;  
-}
-.lines-under-header-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-.line-one {
 
-    width: 85%;
-    height: 10px;
-    background-color: #D06224;
-    border: 1px solid #f0f0e4;
-}
-.line-two {
-    position: absolute;
-    margin: 0 0 -10px 0;
-    width: 70%;
-    height: 10px;
-    background-color: #AE431E;
-    border: 1px solid #f0f0e4;
-}
-.line-three {
-    position: absolute;
-    margin: 0 0 -20px 0;
-    width: 55%;
-    height: 10px;
-    background-color: #8A8635;
-    border: 1px solid #f0f0e4;
-}
-
-.spacer {
-    width: 30%;
-    height: 50px;
-}
 /*Tablet sizes---------------------------------------------------------*/
 @media (min-width: 480px) {
 
