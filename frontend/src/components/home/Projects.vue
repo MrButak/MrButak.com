@@ -1,8 +1,8 @@
 <template>
 
-<div class="project-wrapper-main">
+<div class="project-wrapper-main-left">
     <div class="project-image-wrapper-left">
-        <img class="project-image" src="../../assets/images/salem-smoothies-1200x800.png">
+        <img class="project-image-left" src="../../assets/images/salem-smoothies-1200x800.png">
     </div>
     <div class="project-text-wrapper-left">
         <h3>Salem Smoothies</h3>
@@ -35,7 +35,7 @@
 
 
 
-<div class="project-wrapper-main">
+<div class="project-wrapper-main-right">
     <div class="project-image-wrapper-right">
         <img class="project-image-right" src="../../assets/images/salem-smoothies-1200x800.png">
     </div>
@@ -96,7 +96,7 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
 }
 
 
-.project-wrapper-main {
+.project-wrapper-main-left {
     display: flex;
     width: 100%;
     padding: 15% 0 0 0;
@@ -105,7 +105,7 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
         position: absolute;
     }
 
-    .project-image {
+    .project-image-left {
         display: flex;
         max-width: 60%;
         height: auto;
@@ -126,6 +126,9 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
         padding: .8rem;
         border: .07rem solid #5E454B;
         z-index: 1;
+
+
+
         h3 {
             color: #f0f0e4;
             font-size: 1.5rem;
@@ -141,45 +144,44 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
             color: #f0f0e4;
             font-size: 1.1rem;
         }
-    }
-    .project-icon-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: .45rem 0 0 0;
-        .project-icon {
-            fill: #f0f0e4;
+
+        .project-icon-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: .45rem 0 0 0;
+            .project-icon {
+                fill: #f0f0e4;
+            }
+            .view-more-icon {
+                padding: .05rem 0 0 0;
+            }
         }
-        .view-more-icon {
-            padding: .05rem 0 0 0;
-        }
+        
     }
+}
 
 
 
-
-
-
-
-
-
-
-
+.project-wrapper-main-right {
+    display: flex;
+    width: 100%;
+    padding: 15% 0 0 0;
     .project-image-wrapper-right {
         display: flex;
-        position: absolute;
         flex-direction: row-reverse;
+        position: absolute;
     }
 
     .project-image-right {
         display: flex;
-        max-width: 60%;
+        max-width: 65%;
         height: auto;
         border-top: 2rem solid #CEE5D0;
         border-left: 2rem solid #CEE5D0;
         border-bottom: 2rem solid #CEE5D0;
         outline: .1rem solid #5E454B;
-        padding: .1rem .1rem .1rem 0;
+        padding: .1rem 0 .1rem .1rem;
         background-color: #5E454B;
     }
     .project-text-wrapper-right {
@@ -192,91 +194,57 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
         padding: .8rem;
         border: .07rem solid #5E454B;
         z-index: 1;
+
+
+
+        h3 {
+            color: #f0f0e4;
+            font-size: 1.5rem;
+            padding: 0 0 .5rem 0;
+        }
+        .sub-header {
+            color: #f0f0e4;
+            font-size: 1.25rem;
+            font-weight: bold;
+            padding: 0 0 .5rem 0;
+        }
+        p {
+            color: #f0f0e4;
+            font-size: 1.1rem;
+        }
+
+        .project-icon-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: .45rem 0 0 0;
+            .project-icon {
+                fill: #f0f0e4;
+            }
+            .view-more-icon {
+                padding: .05rem 0 0 0;
+            }
+        }
         
     }
-    
-
-
-
-
 }
 
 
 
-
-// .project-wrapper-main {
-    
-//     .project-image-wrapper-right {
-//         display: flex;
-//         position: absolute;
-//         flex-direction: row-reverse;
-//     }
-
-//     .project-image-right {
-//         display: flex;
-//         max-width: 60%;
-//         height: auto;
-//         border-top: 2rem solid #CEE5D0;
-//         border-left: 2rem solid #CEE5D0;
-//         border-bottom: 2rem solid #CEE5D0;
-//         outline: .1rem solid #5E454B;
-//         padding: .1rem .1rem .1rem 0;
-//         background-color: #5E454B;
-//     }
-//     .project-text-wrapper-right {
-//         display: flex;
-//         flex-direction: column;
-//         width: 65%;
-//         margin: -5% 0 0 0;
-//         background-color: #C36839cc;
-//         border: .1rem solid #C36839cc;
-//         padding: .8rem;
-//         border: .07rem solid #5E454B;
-//         z-index: 1;
-//         h3 {
-//             color: #f0f0e4;
-//             font-size: 1.5rem;
-//             padding: 0 0 .5rem 0;
-//         }
-//         .sub-header {
-//             color: #f0f0e4;
-//             font-size: 1.25rem;
-//             font-weight: bold;
-//             padding: 0 0 .5rem 0;
-//         }
-//         p {
-//             color: #f0f0e4;
-//             font-size: 1.1rem;
-//         }
-//     }
-//     .project-icon-wrapper {
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//         padding: .45rem 0 0 0;
-//         .project-icon {
-//             fill: #f0f0e4;
-//         }
-//         .view-more-icon {
-//             padding: .05rem 0 0 0;
-//         }
-//     }
-
-// }
-
 /*medium sizes---------------------------------------------------------*/
 @media (min-width: 480px) {
 
-    .project-wrapper-main {
+    .project-wrapper-main-left {
         .project-image-wrapper-left {  
         }
 
-        .project-image { 
+        .project-image-left { 
             max-width: 65%; 
         }
         .project-text-wrapper-left {
             max-width: 53%;
             margin: -.05% 0 0 47%;
+
             h3 {
                 font-size: 1.8rem;   
             }
@@ -286,13 +254,53 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
             p {
                 font-size: 1.4rem;
             }
-        }
-        .project-icon-wrapper {
-            .project-icon {
+
+            .project-icon-wrapper {
+                .project-icon {
+                }
+                .view-more-icon { 
+                }
             }
-            .view-more-icon { 
-            }
+            
         }
+        
+    }
+
+
+
+
+    // right
+
+    .project-wrapper-main-right {
+        .project-image-wrapper-right {  
+        }
+
+        .project-image-right { 
+            max-width: 65%; 
+        }
+        .project-text-wrapper-right {
+            max-width: 53%;
+            margin: -.05% 0 0 0;
+
+            h3 {
+                font-size: 1.8rem;   
+            }
+            .sub-header {
+                font-size: 1.19rem;  
+            }
+            p {
+                font-size: 1.4rem;
+            }
+
+            .project-icon-wrapper {
+                .project-icon {
+                }
+                .view-more-icon { 
+                }
+            }
+            
+        }
+        
     }
 
 }
@@ -300,11 +308,11 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
 /*large*-----------------------------------------------------*/
 
 @media (min-width: 700px) { 
-    .project-wrapper-main {
+    .project-wrapper-main-left {
         align-items: center;
         .project-image-wrapper-left {
         }
-        .project-image {
+        .project-image-left {
             max-width: 70%;
         }
         .project-text-wrapper-left {
@@ -328,16 +336,46 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
         }
     }
 
+
+// right
+    .project-wrapper-main-right {
+        align-items: center;
+        .project-image-wrapper-right {
+        }
+        .project-image-right {
+            max-width: 70%;
+        }
+        .project-text-wrapper-right {
+            width: 40%;
+            margin: -0.05% 0 0 0;
+            h3 {
+                font-size: 1.8rem;
+            }
+            .sub-header {
+                font-size: 1.19rem;
+            }
+            p {
+                font-size: 1.4rem;
+            }
+        }
+        .project-icon-wrapper {
+            .project-icon {
+            }
+            .view-more-icon {
+            }
+        }
+    }
+
 }
 /*Desktop sizes*-----------------------------------------------------*/
 
 @media (min-width: 900px) { 
-    .project-wrapper-main {
+    .project-wrapper-main-left {
         align-items: center;
         justify-content: space-between;
         .project-image-wrapper-left {
         }
-        .project-image {
+        .project-image-left {
             max-width: 60%;
         }
         .project-text-wrapper-left {
@@ -361,6 +399,43 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
             }
         }
     }
+
+
+
+    // right
+    .project-wrapper-main-right {
+    
+        justify-content: flex-end;
+        display: flex;
+    
+        .project-image-wrapper-right {
+        }
+        .project-image-right {
+            max-width: 60%;
+        }
+        .project-text-wrapper-right {
+            max-width: 40%;
+            margin: 0 42% 0 0;
+            h3 {
+                font-size: 2rem;
+            }
+            .sub-header {
+                font-size: 1.41rem;
+            }
+            p {
+                font-size: 1.6rem;
+            }
+        }
+        .project-icon-wrapper {
+            .project-icon {
+            }
+            .view-more-icon {
+                
+            }
+        }
+    }
+    
+    
 
 }
 
