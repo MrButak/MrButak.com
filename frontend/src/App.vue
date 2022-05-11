@@ -11,7 +11,7 @@ import CircularMenu from './components/CircularMenu.vue';
 <Header />
 <!-- <CircularMenu /> -->
 <Projects />
-<Footer />
+<!-- <Footer /> -->
 </template>
 
 <style>

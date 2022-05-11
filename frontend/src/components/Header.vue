@@ -3,9 +3,12 @@
 <header class="menu">
       <div class="menu-wrap">
           <div class="icon-wrapper">
-            <a href="https://github.com/MrButak" target="_blank" rel="noreferrer noopener"><img src="../assets/icons/github-icon.svg" class="mobile-header-icon" alt="github-icon"></a>
-            <a href="mailto: mspence5555@gmail.com"><img src="../assets/icons/email-icon.svg" class="mobile-header-icon" alt="github-icon"></a>
-            <a href="https://www.linkedin.com/in/matthew-w-spence" target="_blank" rel="noreferrer noopener"><img src="../assets/icons/linkedin-icon.svg" class="mobile-header-icon" alt="github-icon"></a>
+            <!-- <a href="https://github.com/MrButak" target="_blank" rel="noreferrer noopener"><img src="../assets/icons/github-icon.svg" class="mobile-header-icon" alt="github-icon"></a> -->
+            <span class="mobile-header-icon"><GithubIcon /></span>
+            <!-- <a href="mailto: mspence5555@gmail.com"><img src="../assets/icons/email-icon.svg" class="mobile-header-icon" alt="github-icon"></a> -->
+            <span class="mobile-header-icon"><EmailIcon /></span>
+            <!-- <a href="https://www.linkedin.com/in/matthew-w-spence" target="_blank" rel="noreferrer noopener"><img src="../assets/icons/linkedin-icon.svg" class="mobile-header-icon" alt="github-icon"></a> -->
+            <span class="mobile-header-icon"><LinkedinIcon /></span>
           </div>
           <input type="checkbox" id="checkbox">
           <nav>
@@ -27,7 +30,10 @@
 <script setup>
 
 import { ref, onMounted, computed } from 'vue';
-import HamburgMenu from '../components/svg/HamburgMenu.vue'
+import HamburgMenu from '../components/svg/HamburgMenu.vue';
+import GithubIcon from '../components/svg/GithubIcon.vue';
+import EmailIcon from '../components/svg/EmailIcon.vue';
+import LinkedinIcon from './svg/LinkedinIcon.vue';
 
 </script>
 
@@ -41,28 +47,31 @@ import HamburgMenu from '../components/svg/HamburgMenu.vue'
 .menu-wrap {
     display: flex;
     justify-content: space-between;
-    padding: 0px 35px 0px 0;
-    height: 60px;
+    align-items: center;
+    padding: 2.5rem 2rem;
+    height: 5rem;
     background-color: #5E454B;
     width: 100%;
 }
 .icon-wrapper {
     display: flex;
     gap: 30px;
-    
-    padding: 11px 0 0 35px;
 }
 #hamburg-icon {
     padding: 10px 0 0 20px;
+    fill: #CEE5D0;
+    width: 4rem;
 }
 .mobile-header-icon {
-    width: 38px;
+    fill: #CEE5D0;
+    width: 3rem;
+    
     
 }
 nav {
     z-index: 1;
     position: absolute;
-    background-color: #AE431E;
+    background-color: #CEE5D0;
     top: 59px;
     left:0;
     width: 100%; 
@@ -79,13 +88,13 @@ nav ul li {
 nav ul li a {
     display: inline-block;
     padding: 12px;
-    color: #f0f0e4;
+    color: #CEE5D0;
     font-weight: 700;
     text-decoration: none;
     letter-spacing: 0.05em;
 }
 nav ul li a:hover, nav ul li a:focus {
-    color: #DB5F29;
+    color: #C36839;
 }
 #checkbox {
     display: none;
@@ -148,7 +157,7 @@ nav ul li a:hover, nav ul li a:focus {
         padding-left: 20px;
     }
     nav ul li a {
-        color: #F0F0E4;
+        color: #CEE5D0;
     }
     /*Header end*/
 }
