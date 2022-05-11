@@ -1,7 +1,6 @@
-
 <template>
-<div class="project-wrapper-main">
 
+<div class="project-wrapper-main">
     <div class="project-image-wrapper-left">
         <img class="project-image" src="../../assets/images/salem-smoothies-1200x800.png">
     </div>
@@ -28,9 +27,42 @@
                 <a href="" target="_blank" rel="noreferrer noopener"><img class="project-icon" src="../../assets/icons/website-icon-text.svg" alt="github-icon"></a>
                 <a><img class="project-icon" src="../../assets/icons/view-icon.svg" alt="github-icon"></a> -->
         </div>
-        
     </div>
+</div>
 
+
+
+
+
+
+<div class="project-wrapper-main">
+    <div class="project-image-wrapper-right">
+        <img class="project-image-right" src="../../assets/images/salem-smoothies-1200x800.png">
+    </div>
+    <div class="project-text-wrapper-right">
+        <h3>Salem Smoothies</h3>
+        
+        <p>Full-stack e-commerce website which accepts payments via stripe, sends confirmation e-mails, and
+            integrates a postgres database to update menu items and store order information.
+        </p>
+        <br />
+        <p class="sub-header">Technologies:</p>
+        
+        <p>
+            Frontend: Vue, Javascript , CSS
+        </p>
+        <p>
+            Backend: Node.js, Express, Postgres, Stripe API, Send In Blue API
+        </p>
+        <div class="project-icon-wrapper">
+            <span class="project-icon"><GithubTextIcon /></span>
+            <span class="project-icon"><WebsiteTextIcon /></span>
+            <span class="project-icon view-more-icon"><ViewMoreTextIcon /></span>
+                <!-- <a href="" target="_blank" rel="noreferrer noopener"><img class="project-icon" src="../../assets/icons/github-icon-text.svg" alt="github-icon"></a>
+                <a href="" target="_blank" rel="noreferrer noopener"><img class="project-icon" src="../../assets/icons/website-icon-text.svg" alt="github-icon"></a>
+                <a><img class="project-icon" src="../../assets/icons/view-icon.svg" alt="github-icon"></a> -->
+        </div>
+    </div>
 </div>
 
 </template>
@@ -67,9 +99,10 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
 .project-wrapper-main {
     display: flex;
     width: 100%;
-    padding: 5% 0 0 0;
+    padding: 15% 0 0 0;
     .project-image-wrapper-left {
         display: flex;
+        position: absolute;
     }
 
     .project-image {
@@ -88,12 +121,11 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
         flex-direction: column;
         width: 65%;
         margin: -5% 0 0 35%;
-        // height: 50%;
         background-color: #C36839cc;
         border: .1rem solid #C36839cc;
-        position: absolute;
         padding: .8rem;
         border: .07rem solid #5E454B;
+        z-index: 1;
         h3 {
             color: #f0f0e4;
             font-size: 1.5rem;
@@ -122,7 +154,115 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
             padding: .05rem 0 0 0;
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+    .project-image-wrapper-right {
+        display: flex;
+        position: absolute;
+        flex-direction: row-reverse;
+    }
+
+    .project-image-right {
+        display: flex;
+        max-width: 60%;
+        height: auto;
+        border-top: 2rem solid #CEE5D0;
+        border-left: 2rem solid #CEE5D0;
+        border-bottom: 2rem solid #CEE5D0;
+        outline: .1rem solid #5E454B;
+        padding: .1rem .1rem .1rem 0;
+        background-color: #5E454B;
+    }
+    .project-text-wrapper-right {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        margin: -5% 0 0 0;
+        background-color: #C36839cc;
+        border: .1rem solid #C36839cc;
+        padding: .8rem;
+        border: .07rem solid #5E454B;
+        z-index: 1;
+        
+    }
+    
+
+
+
+
 }
+
+
+
+
+// .project-wrapper-main {
+    
+//     .project-image-wrapper-right {
+//         display: flex;
+//         position: absolute;
+//         flex-direction: row-reverse;
+//     }
+
+//     .project-image-right {
+//         display: flex;
+//         max-width: 60%;
+//         height: auto;
+//         border-top: 2rem solid #CEE5D0;
+//         border-left: 2rem solid #CEE5D0;
+//         border-bottom: 2rem solid #CEE5D0;
+//         outline: .1rem solid #5E454B;
+//         padding: .1rem .1rem .1rem 0;
+//         background-color: #5E454B;
+//     }
+//     .project-text-wrapper-right {
+//         display: flex;
+//         flex-direction: column;
+//         width: 65%;
+//         margin: -5% 0 0 0;
+//         background-color: #C36839cc;
+//         border: .1rem solid #C36839cc;
+//         padding: .8rem;
+//         border: .07rem solid #5E454B;
+//         z-index: 1;
+//         h3 {
+//             color: #f0f0e4;
+//             font-size: 1.5rem;
+//             padding: 0 0 .5rem 0;
+//         }
+//         .sub-header {
+//             color: #f0f0e4;
+//             font-size: 1.25rem;
+//             font-weight: bold;
+//             padding: 0 0 .5rem 0;
+//         }
+//         p {
+//             color: #f0f0e4;
+//             font-size: 1.1rem;
+//         }
+//     }
+//     .project-icon-wrapper {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         padding: .45rem 0 0 0;
+//         .project-icon {
+//             fill: #f0f0e4;
+//         }
+//         .view-more-icon {
+//             padding: .05rem 0 0 0;
+//         }
+//     }
+
+// }
 
 /*medium sizes---------------------------------------------------------*/
 @media (min-width: 480px) {
