@@ -37,23 +37,20 @@
 
 <div class="project-wrapper-main-right">
     <div class="project-image-wrapper-right">
-        <img class="project-image-right" src="../../assets/images/salem-smoothies-1200x800.png">
+        <img class="project-image-right" src="../../assets/images/vueopoly-1200x800.png">
     </div>
     <div class="project-text-wrapper-right">
-        <h3>Salem Smoothies</h3>
+        <h3>Vueopoly</h3>
         
-        <p>Full-stack e-commerce website which accepts payments via stripe, sends confirmation e-mails, and
-            integrates a postgres database to update menu items and store order information.
+        <p>Fully functional Monopoly game made entirely in Vue. In this project I learned a lot about project structure and scalability. Supports 2 - 6 players.
         </p>
         <br />
         <p class="sub-header">Technologies:</p>
         
         <p>
-            Frontend: Vue, Javascript , CSS
+            Frontend: Vue, Javascript , SCSS, Local Storage
         </p>
-        <p>
-            Backend: Node.js, Express, Postgres, Stripe API, Send In Blue API
-        </p>
+        
         <div class="project-icon-wrapper">
             <span class="project-icon"><GithubTextIcon /></span>
             <span class="project-icon"><WebsiteTextIcon /></span>
@@ -65,6 +62,34 @@
     </div>
 </div>
 
+
+
+<div class="project-wrapper-main-left">
+    <div class="project-image-wrapper-left">
+        <img class="project-image-left" src="../../assets/images/stories-app-1200x800.png">
+    </div>
+    <div class="project-text-wrapper-left">
+        <h3>Stories App</h3>
+        
+        <p>A server side rendered, message-board style app with login, user sessions, and an integrated postgres
+            database.
+        </p>
+        <br />
+        <p class="sub-header">Technologies:</p>
+       
+        <p>
+            Backend: Node.js, Express, Postgres, EJS template engine
+        </p>
+        <div class="project-icon-wrapper">
+            <span class="project-icon"><GithubTextIcon /></span>
+            <span class="project-icon"><WebsiteTextIcon /></span>
+            <span class="project-icon view-more-icon"><ViewMoreTextIcon /></span>
+                <!-- <a href="" target="_blank" rel="noreferrer noopener"><img class="project-icon" src="../../assets/icons/github-icon-text.svg" alt="github-icon"></a>
+                <a href="" target="_blank" rel="noreferrer noopener"><img class="project-icon" src="../../assets/icons/website-icon-text.svg" alt="github-icon"></a>
+                <a><img class="project-icon" src="../../assets/icons/view-icon.svg" alt="github-icon"></a> -->
+        </div>
+    </div>
+</div>
 </template>
 
 <script setup>
