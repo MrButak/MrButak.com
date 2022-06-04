@@ -1,3 +1,8 @@
+*.svg
+*.webm
+*.png
+*.exe
+firebase-tools-instant-win.exe
 # Logs
 logs
 *.log
@@ -28,3 +33,7 @@ dist-ssr
  *.png
  *.jpg
  *.webm
+
+ *.dump
+ *.sql
+ *.exe

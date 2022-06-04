@@ -3,12 +3,9 @@
 <header class="menu">
       <div class="menu-wrap">
           <div class="icon-wrapper">
-            <!-- <a href="https://github.com/MrButak" target="_blank" rel="noreferrer noopener"><img src="../assets/icons/github-icon.svg" class="mobile-header-icon" alt="github-icon"></a> -->
-            <span class="mobile-header-icon"><GithubIcon /></span>
-            <!-- <a href="mailto: mspence5555@gmail.com"><img src="../assets/icons/email-icon.svg" class="mobile-header-icon" alt="github-icon"></a> -->
-            <span class="mobile-header-icon"><EmailIcon /></span>
-            <!-- <a href="https://www.linkedin.com/in/matthew-w-spence" target="_blank" rel="noreferrer noopener"><img src="../assets/icons/linkedin-icon.svg" class="mobile-header-icon" alt="github-icon"></a> -->
-            <span class="mobile-header-icon"><LinkedinIcon /></span>
+            <a href="https://github.com/MrButak" target="_blank" rel="noreferrer noopener"><GithubIcon class="mobile-header-icon"/></a>
+            <a href="mailto: mspence5555@gmail.com" target="_blank" rel="noreferrer noopener"><EmailIcon class="mobile-header-icon"/></a>
+            <a href="https://www.linkedin.com/in/matthew-w-spence" target="_blank" rel="noreferrer noopener"><LinkedinIcon class="mobile-header-icon"/></a>
           </div>
           <input type="checkbox" id="checkbox">
           <nav>
@@ -37,7 +34,7 @@ import LinkedinIcon from './svg/LinkedinIcon.vue';
 
 </script>
 
-<style>
+<style lang="scss">
 /* light #E9C891  lighter #f0f0e4 orange #D06224 dark-rusty #AE431E olive #8A8635 */
 /* darker rust #7B3C3C */
 
@@ -64,15 +61,16 @@ import LinkedinIcon from './svg/LinkedinIcon.vue';
 }
 .mobile-header-icon {
     fill: #CEE5D0;
-    width: 3rem;
-    
     
 }
+.mobile-header-icon:hover, .mobile-header-icon:focus {
+    fill: #D06224;
+}
 nav {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     background-color: #CEE5D0;
-    top: 59px;
+    top: 80px;
     left:0;
     width: 100%; 
 }
@@ -88,7 +86,7 @@ nav ul li {
 nav ul li a {
     display: inline-block;
     padding: 12px;
-    color: #CEE5D0;
+    color: #5E454B;
     font-weight: 700;
     text-decoration: none;
     letter-spacing: 0.05em;
@@ -103,7 +101,7 @@ nav ul li a:hover, nav ul li a:focus {
     max-height: 190px;
     padding: 15px 0;
     transition: all 0.5s;
-    /* border: 1px solid #DB5F29; */
+    border: 1px solid #DB5F29;
 }
 /*Header end*/
 
@@ -142,7 +140,7 @@ nav ul li a:hover, nav ul li a:focus {
         margin: 0 0 0 6vw;
     }
     nav {
-        top: -7px;
+        top: 8px;
         background-color: transparent;
     }
     nav ul {

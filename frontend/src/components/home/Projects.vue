@@ -1,5 +1,5 @@
 <template>
-
+<div class="project-wrapper-main">
 <div class="project-wrapper-main-left">
     <div class="project-image-wrapper-left">
         <img class="project-image-left" src="../../assets/images/salem-smoothies-1200x800.png">
@@ -20,19 +20,12 @@
             Backend: Node.js, Express, Postgres, Stripe API, Send In Blue API
         </p>
         <div class="project-icon-wrapper">
-            <span class="project-icon"><GithubTextIcon /></span>
-            <span class="project-icon"><WebsiteTextIcon /></span>
-            <span class="project-icon view-more-icon"><ViewMoreTextIcon /></span>
-                <!-- <a href="" target="_blank" rel="noreferrer noopener"><img class="project-icon" src="../../assets/icons/github-icon-text.svg" alt="github-icon"></a>
-                <a href="" target="_blank" rel="noreferrer noopener"><img class="project-icon" src="../../assets/icons/website-icon-text.svg" alt="github-icon"></a>
-                <a><img class="project-icon" src="../../assets/icons/view-icon.svg" alt="github-icon"></a> -->
+            <a href="https://github.com/MrButak/e-shop" target="_blank" rel="noreferrer noopener"><GithubTextIcon /></a>
+            <a href="https://salem-smoothies.herokuapp.com/" target="_blank" rel="noreferrer noopener"><WebsiteTextIcon /></a>
+            <a href="" target="_blank" rel="noreferrer noopener"><ViewMoreTextIcon /></a>
         </div>
     </div>
 </div>
-
-
-
-
 
 
 <div class="project-wrapper-main-right">
@@ -52,16 +45,12 @@
         </p>
         
         <div class="project-icon-wrapper">
-            <span class="project-icon"><GithubTextIcon /></span>
-            <span class="project-icon"><WebsiteTextIcon /></span>
-            <span class="project-icon view-more-icon"><ViewMoreTextIcon /></span>
-                <!-- <a href="" target="_blank" rel="noreferrer noopener"><img class="project-icon" src="../../assets/icons/github-icon-text.svg" alt="github-icon"></a>
-                <a href="" target="_blank" rel="noreferrer noopener"><img class="project-icon" src="../../assets/icons/website-icon-text.svg" alt="github-icon"></a>
-                <a><img class="project-icon" src="../../assets/icons/view-icon.svg" alt="github-icon"></a> -->
+            <a href="https://github.com/MrButak/vueopoly-v2" target="_blank" rel="noreferrer noopener"><GithubTextIcon /></a>
+            <a href="https://vueopoly.web.app/" target="_blank" rel="noreferrer noopener"><WebsiteTextIcon /></a>
+            <a href="" target="_blank" rel="noreferrer noopener"><ViewMoreTextIcon /></a>
         </div>
     </div>
 </div>
-
 
 
 <div class="project-wrapper-main-left">
@@ -81,25 +70,20 @@
             Backend: Node.js, Express, Postgres, EJS template engine
         </p>
         <div class="project-icon-wrapper">
-            <span class="project-icon"><GithubTextIcon /></span>
-            <span class="project-icon"><WebsiteTextIcon /></span>
-            <span class="project-icon view-more-icon"><ViewMoreTextIcon /></span>
-                <!-- <a href="" target="_blank" rel="noreferrer noopener"><img class="project-icon" src="../../assets/icons/github-icon-text.svg" alt="github-icon"></a>
-                <a href="" target="_blank" rel="noreferrer noopener"><img class="project-icon" src="../../assets/icons/website-icon-text.svg" alt="github-icon"></a>
-                <a><img class="project-icon" src="../../assets/icons/view-icon.svg" alt="github-icon"></a> -->
+            <a href="https://github.com/MrButak/stories" target="_blank" rel="noreferrer noopener"><GithubTextIcon /></a>
+            <a href="https://mrbutak-story-app.herokuapp.com/" target="_blank" rel="noreferrer noopener"><WebsiteTextIcon /></a>
+            <a href="" target="_blank" rel="noreferrer noopener"><ViewMoreTextIcon /></a>
         </div>
     </div>
+</div>
 </div>
 </template>
 
 <script setup>
 
-import { ref, onMounted, computed } from 'vue';
 import GithubTextIcon from '../../components/svg/GithubTextIcon.vue';
 import WebsiteTextIcon from '../../components/svg/WebsiteTextIcon.vue';
 import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
-
-
 
 </script>
 
@@ -119,12 +103,22 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
 // rgb(216, 179, 132)
 // rgb(94, 69, 75)
 }
+.project-wrapper-main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
 
+.project-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .45rem 0 0 0;    
+}
 
 .project-wrapper-main-left {
     display: flex;
     width: 100%;
-    padding: 15% 0 0 0;
     .project-image-wrapper-left {
         display: flex;
         position: absolute;
@@ -151,9 +145,7 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
         padding: .8rem;
         border: .07rem solid #5E454B;
         z-index: 1;
-
-
-
+        
         h3 {
             color: #f0f0e4;
             font-size: 1.5rem;
@@ -169,35 +161,18 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
             color: #f0f0e4;
             font-size: 1.1rem;
         }
-
-        .project-icon-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: .45rem 0 0 0;
-            .project-icon {
-                fill: #f0f0e4;
-            }
-            .view-more-icon {
-                padding: .05rem 0 0 0;
-            }
-        }
-        
     }
 }
-
 
 
 .project-wrapper-main-right {
     display: flex;
     width: 100%;
-    padding: 15% 0 0 0;
     .project-image-wrapper-right {
         display: flex;
         flex-direction: row-reverse;
         position: absolute;
     }
-
     .project-image-right {
         display: flex;
         max-width: 65%;
@@ -219,9 +194,6 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
         padding: .8rem;
         border: .07rem solid #5E454B;
         z-index: 1;
-
-
-
         h3 {
             color: #f0f0e4;
             font-size: 1.5rem;
@@ -237,20 +209,6 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
             color: #f0f0e4;
             font-size: 1.1rem;
         }
-
-        .project-icon-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: .45rem 0 0 0;
-            .project-icon {
-                fill: #f0f0e4;
-            }
-            .view-more-icon {
-                padding: .05rem 0 0 0;
-            }
-        }
-        
     }
 }
 
@@ -260,9 +218,6 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
 @media (min-width: 480px) {
 
     .project-wrapper-main-left {
-        .project-image-wrapper-left {  
-        }
-
         .project-image-left { 
             max-width: 65%; 
         }
@@ -279,26 +234,12 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
             p {
                 font-size: 1.4rem;
             }
-
-            .project-icon-wrapper {
-                .project-icon {
-                }
-                .view-more-icon { 
-                }
-            }
-            
-        }
-        
+        } 
     }
-
-
-
 
     // right
 
     .project-wrapper-main-right {
-        .project-image-wrapper-right {  
-        }
 
         .project-image-right { 
             max-width: 65%; 
@@ -316,33 +257,29 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
             p {
                 font-size: 1.4rem;
             }
-
-            .project-icon-wrapper {
-                .project-icon {
-                }
-                .view-more-icon { 
-                }
-            }
-            
         }
-        
     }
-
 }
 
 /*large*-----------------------------------------------------*/
 
 @media (min-width: 700px) { 
+
+    .project-wrapper-main {
+        display: flex;
+        flex-direction: column;
+        gap: 32rem;
+        margin: 18rem 0 0 0;
+    }
     .project-wrapper-main-left {
         align-items: center;
-        .project-image-wrapper-left {
-        }
         .project-image-left {
             max-width: 70%;
         }
         .project-text-wrapper-left {
             width: 40%;
             margin: -0.05% 0 0 60%;
+            position: absolute;
             h3 {
                 font-size: 1.8rem;
             }
@@ -351,12 +288,6 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
             }
             p {
                 font-size: 1.4rem;
-            }
-        }
-        .project-icon-wrapper {
-            .project-icon {
-            }
-            .view-more-icon {
             }
         }
     }
@@ -365,14 +296,13 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
 // right
     .project-wrapper-main-right {
         align-items: center;
-        .project-image-wrapper-right {
-        }
         .project-image-right {
             max-width: 70%;
         }
         .project-text-wrapper-right {
             width: 40%;
             margin: -0.05% 0 0 0;
+            position: absolute;
             h3 {
                 font-size: 1.8rem;
             }
@@ -383,29 +313,29 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
                 font-size: 1.4rem;
             }
         }
-        .project-icon-wrapper {
-            .project-icon {
-            }
-            .view-more-icon {
-            }
-        }
     }
 
 }
 /*Desktop sizes*-----------------------------------------------------*/
 
 @media (min-width: 900px) { 
+
+    .project-wrapper-main {
+        display: flex;
+        flex-direction: column;
+        gap: 36rem;
+        margin: 18rem 0 0 0;
+    }
     .project-wrapper-main-left {
         align-items: center;
         justify-content: space-between;
-        .project-image-wrapper-left {
-        }
         .project-image-left {
             max-width: 60%;
         }
         .project-text-wrapper-left {
             max-width: 40%;
             margin: 0 0 0 42%;
+            position: absolute;
             h3 {
                 font-size: 2rem;
             }
@@ -416,31 +346,20 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
                 font-size: 1.6rem;
             }
         }
-        .project-icon-wrapper {
-            .project-icon {
-            }
-            .view-more-icon {
-                
-            }
-        }
     }
-
-
 
     // right
     .project-wrapper-main-right {
     
         justify-content: flex-end;
         display: flex;
-    
-        .project-image-wrapper-right {
-        }
         .project-image-right {
             max-width: 60%;
         }
         .project-text-wrapper-right {
             max-width: 40%;
             margin: 0 42% 0 0;
+            position: absolute;
             h3 {
                 font-size: 2rem;
             }
@@ -451,17 +370,7 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
                 font-size: 1.6rem;
             }
         }
-        .project-icon-wrapper {
-            .project-icon {
-            }
-            .view-more-icon {
-                
-            }
-        }
     }
-    
-    
-
 }
 
 </style>
