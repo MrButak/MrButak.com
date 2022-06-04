@@ -12,7 +12,7 @@
               <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">Projects</a></li>
-                  <li><a href="#" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                  <li><a href="../assets/misc/matthew-spence-resume.pdf" target="_blank" rel="noopener noreferrer" download>Resume</a></li>
               </ul>
           </nav>
           <label id="hamburg-icon" class="menu-icon" for="checkbox">
@@ -26,7 +26,6 @@
 
 <script setup>
 
-import { ref, onMounted, computed } from 'vue';
 import HamburgMenu from '../components/svg/HamburgMenu.vue';
 import GithubIcon from '../components/svg/GithubIcon.vue';
 import EmailIcon from '../components/svg/EmailIcon.vue';
@@ -101,7 +100,7 @@ nav ul li a:hover, nav ul li a:focus {
     max-height: 190px;
     padding: 15px 0;
     transition: all 0.5s;
-    border: 1px solid #DB5F29;
+    border: 1px solid #5E454B;
 }
 /*Header end*/
 

@@ -4,11 +4,11 @@ import AboutMe from './components/home/AboutMe.vue';
 import Projects from './components/home/Projects.vue';
 import Resume from './components/home/Resume.vue';
 import Footer from './components/Footer.vue';
-import CircularMenu from './components/CircularMenu.vue';
 </script>
 
 <template>
 <Header />
+
 <Projects />
 <!-- <Footer /> -->
 </template>
@@ -26,6 +26,7 @@ import CircularMenu from './components/CircularMenu.vue';
     url(./assets/fonts/Raleway-Regular.ttf) format("truetype");
     font-display: swap;
 }
+
 * {
     
     box-sizing: border-box;

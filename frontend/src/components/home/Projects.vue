@@ -1,4 +1,5 @@
 <template>
+<h2 class="heading">Projects</h2>
 <div class="project-wrapper-main">
 <div class="project-wrapper-main-left">
     <div class="project-image-wrapper-left">
@@ -103,10 +104,20 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
 // rgb(216, 179, 132)
 // rgb(94, 69, 75)
 }
+
+.heading {
+    color: #5E454B;
+    text-align: center;
+    margin: 1.2rem 0;
+    font-size: 3rem;
+}
+
 .project-wrapper-main {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    margin: 3rem 0 0 0;
+    
 }
 
 .project-icon-wrapper {
@@ -269,7 +280,7 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
         display: flex;
         flex-direction: column;
         gap: 32rem;
-        margin: 18rem 0 0 0;
+        margin: 20rem 0 0 0;
     }
     .project-wrapper-main-left {
         align-items: center;
@@ -324,7 +335,7 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
         display: flex;
         flex-direction: column;
         gap: 36rem;
-        margin: 18rem 0 0 0;
+        margin: 20rem 0 0 0;
     }
     .project-wrapper-main-left {
         align-items: center;
