@@ -9,7 +9,6 @@ import CircularMenu from './components/CircularMenu.vue';
 
 <template>
 <Header />
-<!-- <CircularMenu /> -->
 <Projects />
 <!-- <Footer /> -->
 </template>
@@ -42,7 +41,10 @@ html {
     background-color: #F3F0D7;
 }
 p, text {
-    font-family: Railway;
+    font-family: Raleway;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto;
 }
 #app {
     
