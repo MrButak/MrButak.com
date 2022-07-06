@@ -3,22 +3,24 @@
 <div class="project-wrapper-main">
 <div class="project-wrapper-main-left">
     <div class="project-image-wrapper-left">
-        <img class="project-image-left" src="../../assets/images/salem-smoothies-1200x800.png">
+        <img class="project-image-left" src="../../assets/images/trucker-companion-1200x800.png">
     </div>
     <div class="project-text-wrapper-left">
-        <h3>Salem Smoothies</h3>
+        <h3>Trucker Companion</h3>
         
-        <p>Full-stack e-commerce website which accepts payments via stripe, sends confirmation e-mails, and
-            integrates a postgres database to update menu items and store order information.
+        <p>Full-stack semi-truck navigation and parking app. As a former truck driver I know the current pain points with Trucker Path (the most popular ane widely used trucker app) and aim to build something better.
         </p>
         <br />
         <p class="sub-header">Technologies:</p>
         
         <p>
-            Frontend: Vue, Javascript , CSS
+            Frontend: Vue, Javascript , SCSS
         </p>
         <p>
-            Backend: Node.js, Express, Postgres, Stripe API, Send In Blue API
+            Backend: Node.js, Express, Postgres, Google Maps js API
+        </p>
+        <p>
+            Other: I wrote several (helper) programs to get accurate truck parking data along with geolocation validation for these locations.
         </p>
         <div class="project-icon-wrapper">
             <a href="https://github.com/MrButak/e-shop" target="_blank" rel="noreferrer noopener"><GithubTextIcon /></a>
@@ -77,6 +79,35 @@
         </div>
     </div>
 </div>
+
+<div class="project-wrapper-main-right">
+    <div class="project-image-wrapper-right">
+        <img class="project-image-right" src="../../assets/images/salem-smoothies-1200x800.png">
+    </div>
+    <div class="project-text-wrapper-right">
+        <h3>Salem Smoothies</h3>
+        
+        <p>Full-stack e-commerce website which accepts payments via stripe, sends confirmation e-mails, and
+            integrates a postgres database to update menu items and store order information.
+        </p>
+        <br />
+        <p class="sub-header">Technologies:</p>
+        
+        <p>
+            Frontend: Vue, Javascript , CSS
+        </p>
+        <p>
+            Backend: Node.js, Express, Postgres, Stripe API, Send In Blue API
+        </p>
+        
+        <div class="project-icon-wrapper">
+            <a href="https://github.com/MrButak/e-shop" target="_blank" rel="noreferrer noopener"><GithubTextIcon /></a>
+            <a href="https://salem-smoothies.herokuapp.com/" target="_blank" rel="noreferrer noopener"><WebsiteTextIcon /></a>
+            <a href="" target="_blank" rel="noreferrer noopener"><ViewMoreTextIcon /></a>
+        </div>
+    </div>
+</div>
+
 </div>
 </template>
 
