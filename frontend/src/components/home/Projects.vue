@@ -8,23 +8,23 @@
     <div class="project-text-wrapper-left">
         <h3>Trucker Companion</h3>
         
-        <p>Full-stack semi-truck navigation and parking app. As a former truck driver I know the current pain points with Trucker Path (the most popular ane widely used trucker app) and aim to build something better.
+        <p>Full-stack semi-truck navigation and parking app. As a former truck driver I know the current pain points with Trucker Path (the most popular and widely used trucker app) and aim to build something better.
         </p>
         <br />
         <p class="sub-header">Technologies:</p>
         
         <p>
-            Frontend: Vue, Javascript , SCSS
+            <u>Frontend</u>: Vue, Javascript , SCSS, PWA
         </p>
         <p>
-            Backend: Node.js, Express, Postgres, Google Maps js API
+            <u>Backend</u>: Node.js, Express, Postgres, PostGIS, Google Maps js API
         </p>
         <p>
-            Other: I wrote several (helper) programs to get accurate truck parking data along with geolocation validation for these locations.
+            <u>Other</u>: I wrote several (helper) programs to get accurate truck parking data along with geolocation validation for these locations.
         </p>
         <div class="project-icon-wrapper">
-            <a href="https://github.com/MrButak/e-shop" target="_blank" rel="noreferrer noopener"><GithubTextIcon /></a>
-            <a href="https://salem-smoothies.herokuapp.com/" target="_blank" rel="noreferrer noopener"><WebsiteTextIcon /></a>
+            <a href="https://github.com/MrButak/" target="_blank" rel="noreferrer noopener"><GithubTextIcon /></a>
+            <a href="https://truckercompanion.com/" target="_blank" rel="noreferrer noopener"><WebsiteTextIcon /></a>
             <a href="" target="_blank" rel="noreferrer noopener"><ViewMoreTextIcon /></a>
         </div>
     </div>
@@ -33,23 +33,27 @@
 
 <div class="project-wrapper-main-right">
     <div class="project-image-wrapper-right">
-        <img class="project-image-right" src="../../assets/images/vueopoly-1200x800.png">
+        <img class="project-image-right" src="../../assets/images/salem-smoothies-1200x800.png">
     </div>
     <div class="project-text-wrapper-right">
-        <h3>Vueopoly</h3>
+        <h3>Salem Smoothies</h3>
         
-        <p>Fully functional Monopoly game made entirely in Vue. In this project I learned a lot about project structure and scalability. Supports 2 - 6 players.
+        <p>Full-stack e-commerce website which accepts payments via stripe, sends confirmation e-mails, and
+            integrates a postgres database to update menu items and store order information.
         </p>
         <br />
         <p class="sub-header">Technologies:</p>
         
         <p>
-            Frontend: Vue, Javascript , SCSS, Local Storage
+            <u>Frontend</u>: Vue, Javascript , SCSS
+        </p>
+        <p>
+            <u>Backend</u>: Node.js, Express, Postgres, Stripe API, Send In Blue API
         </p>
         
         <div class="project-icon-wrapper">
-            <a href="https://github.com/MrButak/vueopoly-v2" target="_blank" rel="noreferrer noopener"><GithubTextIcon /></a>
-            <a href="https://vueopoly.web.app/" target="_blank" rel="noreferrer noopener"><WebsiteTextIcon /></a>
+            <a href="https://github.com/MrButak/e-shop" target="_blank" rel="noreferrer noopener"><GithubTextIcon /></a>
+            <a href="https://salem-smoothies.herokuapp.com/" target="_blank" rel="noreferrer noopener"><WebsiteTextIcon /></a>
             <a href="" target="_blank" rel="noreferrer noopener"><ViewMoreTextIcon /></a>
         </div>
     </div>
@@ -70,7 +74,7 @@
         <p class="sub-header">Technologies:</p>
        
         <p>
-            Backend: Node.js, Express, Postgres, EJS template engine
+            <u>Backend</u>: Node.js, Express, Postgres, EJS template engine
         </p>
         <div class="project-icon-wrapper">
             <a href="https://github.com/MrButak/stories" target="_blank" rel="noreferrer noopener"><GithubTextIcon /></a>
@@ -82,27 +86,23 @@
 
 <div class="project-wrapper-main-right">
     <div class="project-image-wrapper-right">
-        <img class="project-image-right" src="../../assets/images/salem-smoothies-1200x800.png">
+        <img class="project-image-right" src="../../assets/images/vueopoly-1200x800.png">
     </div>
     <div class="project-text-wrapper-right">
-        <h3>Salem Smoothies</h3>
+        <h3>Vueopoly</h3>
         
-        <p>Full-stack e-commerce website which accepts payments via stripe, sends confirmation e-mails, and
-            integrates a postgres database to update menu items and store order information.
+        <p>Fully functional Monopoly game made entirely in Vue. In this project I learned a lot about project structure and scalability. Supports 2 - 6 players.
         </p>
         <br />
         <p class="sub-header">Technologies:</p>
         
         <p>
-            Frontend: Vue, Javascript , CSS
-        </p>
-        <p>
-            Backend: Node.js, Express, Postgres, Stripe API, Send In Blue API
+            <u>Frontend</u>: Vue, Javascript , SCSS, Local Storage API
         </p>
         
         <div class="project-icon-wrapper">
-            <a href="https://github.com/MrButak/e-shop" target="_blank" rel="noreferrer noopener"><GithubTextIcon /></a>
-            <a href="https://salem-smoothies.herokuapp.com/" target="_blank" rel="noreferrer noopener"><WebsiteTextIcon /></a>
+            <a href="https://github.com/MrButak/vueopoly-v2" target="_blank" rel="noreferrer noopener"><GithubTextIcon /></a>
+            <a href="https://vueopoly.web.app/" target="_blank" rel="noreferrer noopener"><WebsiteTextIcon /></a>
             <a href="" target="_blank" rel="noreferrer noopener"><ViewMoreTextIcon /></a>
         </div>
     </div>
@@ -310,7 +310,7 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
     .project-wrapper-main {
         display: flex;
         flex-direction: column;
-        gap: 32rem;
+        gap: 36rem;
         margin: 20rem 0 0 0;
     }
     .project-wrapper-main-left {
@@ -365,7 +365,7 @@ import ViewMoreTextIcon from '../../components/svg/ViewMoreTextIcon.vue';
     .project-wrapper-main {
         display: flex;
         flex-direction: column;
-        gap: 36rem;
+        gap: 38rem;
         margin: 20rem 0 0 0;
     }
     .project-wrapper-main-left {
