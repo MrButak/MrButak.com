@@ -25,7 +25,7 @@
         <div class="project-icon-wrapper">
             <a href="https://github.com/MrButak/" target="_blank" rel="noreferrer noopener"><GithubTextIcon /></a>
             <a href="https://truckercompanion.com/" target="_blank" rel="noreferrer noopener"><WebsiteTextIcon /></a>
-            <a href="" target="_blank" rel="noreferrer noopener"><ViewMoreTextIcon /></a>
+            <ViewMoreTextIcon />
         </div>
     </div>
 </div>
@@ -54,7 +54,7 @@
         <div class="project-icon-wrapper">
             <a href="https://github.com/MrButak/e-shop" target="_blank" rel="noreferrer noopener"><GithubTextIcon /></a>
             <a href="https://salem-smoothies.herokuapp.com/" target="_blank" rel="noreferrer noopener"><WebsiteTextIcon /></a>
-            <a href="" target="_blank" rel="noreferrer noopener"><ViewMoreTextIcon /></a>
+            <ViewMoreTextIcon />
         </div>
     </div>
 </div>
@@ -79,7 +79,7 @@
         <div class="project-icon-wrapper">
             <a href="https://github.com/MrButak/stories" target="_blank" rel="noreferrer noopener"><GithubTextIcon /></a>
             <a href="https://mrbutak-story-app.herokuapp.com/" target="_blank" rel="noreferrer noopener"><WebsiteTextIcon /></a>
-            <a href="" target="_blank" rel="noreferrer noopener"><ViewMoreTextIcon /></a>
+            <ViewMoreTextIcon />
         </div>
     </div>
 </div>
@@ -103,7 +103,7 @@
         <div class="project-icon-wrapper">
             <a href="https://github.com/MrButak/vueopoly-v2" target="_blank" rel="noreferrer noopener"><GithubTextIcon /></a>
             <a href="https://vueopoly.web.app/" target="_blank" rel="noreferrer noopener"><WebsiteTextIcon /></a>
-            <a href="" target="_blank" rel="noreferrer noopener"><ViewMoreTextIcon /></a>
+            <ViewMoreTextIcon />
         </div>
     </div>
 </div>
