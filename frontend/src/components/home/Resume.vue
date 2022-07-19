@@ -10,7 +10,7 @@
 import Resume from '../../assets/images/matthew-spence-resume.png';
 import dlIcon from '../../assets/icons/download-icon.svg';
 import viewIcon from '../../assets/icons/view-icon.svg';
-import ResumePdf from '../../assets/misc/matthew-spence-resume.pdf';
+// import ResumePdf from '../../assets/misc/matthew-spence-resume.pdf';
 </script>
 
 <style>

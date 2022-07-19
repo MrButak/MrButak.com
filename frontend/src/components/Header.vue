@@ -12,7 +12,7 @@
               <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">Projects</a></li>
-                  <li><a href="../assets/misc/matthew-spence-resume.pdf" target="_blank" rel="noopener noreferrer" download>Resume</a></li>
+                  <li><a :href="resume" target="_blank" rel="noopener noreferrer" download>Resume</a></li>
               </ul>
           </nav>
           <label id="hamburg-icon" class="menu-icon" for="checkbox">
@@ -30,6 +30,7 @@ import HamburgMenu from '../components/svg/HamburgMenu.vue';
 import GithubIcon from '../components/svg/GithubIcon.vue';
 import EmailIcon from '../components/svg/EmailIcon.vue';
 import LinkedinIcon from './svg/LinkedinIcon.vue';
+const resume = new URL('../assets/misc/matthew-spence-resume.pdf', import.meta.url).href
 
 </script>
 
