@@ -30,7 +30,7 @@ import HamburgMenu from '../components/svg/HamburgMenu.vue';
 import GithubIcon from '../components/svg/GithubIcon.vue';
 import EmailIcon from '../components/svg/EmailIcon.vue';
 import LinkedinIcon from './svg/LinkedinIcon.vue';
-const resume = new URL('../assets/misc/matthew-spence-resume.pdf', import.meta.url).href
+const resume = new URL('../assets/misc/matthew-whitney-spence-resume.pdf', import.meta.url).href
 
 </script>
 
