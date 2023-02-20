@@ -40,7 +40,9 @@ const resume = new URL('../assets/misc/matthew-whitney-spence-resume.pdf', impor
 
 /*mobile first*/
 
-
+a {
+    z-index: 3;
+}
 .menu-wrap {
     display: flex;
     justify-content: space-between;
